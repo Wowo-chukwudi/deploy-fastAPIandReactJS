@@ -1,0 +1,2593 @@
+{
+  "vulnerabilities": [
+    {
+      "id": "SNYK-PYTHON-ANYIO-7361842",
+      "title": "Race Condition",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:H",
+      "credit": [
+        "Daniel Robbins"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,4.4.0)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "4.4.0"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "high",
+      "cvssScore": 8.3,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "anyio",
+      "references": [
+        {
+          "url": "https://github.com/agronholm/anyio/commit/8e8b7f55ce09729639d2220c148f6820dc7b4901",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/agronholm/anyio/issues/425",
+          "title": "GitHub Issue"
+        }
+      ],
+      "cvssDetails": [],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/VI:N/VA:H/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 8.3,
+          "cvssVersion": "4.0",
+          "modificationTime": "2024-09-01T17:24:38.496732Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:H",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-09-01T17:24:38.496732Z"
+        }
+      ],
+      "description": "## Overview\n[anyio](https://pypi.org/project/anyio) is a High level compatibility layer for multiple asynchronous event loop implementations\n\nAffected versions of this package are vulnerable to Race Condition in `_eventloop.get_asynclib()` that cause crashes when multiple event loops of the same backend are running in separate threads and simultaneously attempting to use AnyIO for the first time.\n## Remediation\nUpgrade `anyio` to version 4.4.0 or higher.\n## References\n- [GitHub Commit](https://github.com/agronholm/anyio/commit/8e8b7f55ce09729639d2220c148f6820dc7b4901)\n- [GitHub Issue](https://github.com/agronholm/anyio/issues/425)\n",
+      "epssDetails": null,
+      "identifiers": {
+        "CVE": [],
+        "CWE": [
+          "CWE-362"
+        ],
+        "PVE": [
+          "PVE-2024-71199",
+          "PVE-2024-72487"
+        ]
+      },
+      "packageName": "anyio",
+      "proprietary": false,
+      "creationTime": "2024-06-24T14:34:10.199479Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2024-06-01T06:29:24Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "pip",
+      "publicationTime": "2024-06-24T14:34:10.405746Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-09-01T17:24:38.496732Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "app@0.1.0",
+        "httpx@0.25.2",
+        "anyio@4.3.0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "anyio",
+      "version": "4.3.0"
+    },
+    {
+      "id": "SNYK-PYTHON-ANYIO-7361842",
+      "title": "Race Condition",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:H",
+      "credit": [
+        "Daniel Robbins"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,4.4.0)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "4.4.0"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "high",
+      "cvssScore": 8.3,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "anyio",
+      "references": [
+        {
+          "url": "https://github.com/agronholm/anyio/commit/8e8b7f55ce09729639d2220c148f6820dc7b4901",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/agronholm/anyio/issues/425",
+          "title": "GitHub Issue"
+        }
+      ],
+      "cvssDetails": [],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/VI:N/VA:H/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 8.3,
+          "cvssVersion": "4.0",
+          "modificationTime": "2024-09-01T17:24:38.496732Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:H",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-09-01T17:24:38.496732Z"
+        }
+      ],
+      "description": "## Overview\n[anyio](https://pypi.org/project/anyio) is a High level compatibility layer for multiple asynchronous event loop implementations\n\nAffected versions of this package are vulnerable to Race Condition in `_eventloop.get_asynclib()` that cause crashes when multiple event loops of the same backend are running in separate threads and simultaneously attempting to use AnyIO for the first time.\n## Remediation\nUpgrade `anyio` to version 4.4.0 or higher.\n## References\n- [GitHub Commit](https://github.com/agronholm/anyio/commit/8e8b7f55ce09729639d2220c148f6820dc7b4901)\n- [GitHub Issue](https://github.com/agronholm/anyio/issues/425)\n",
+      "epssDetails": null,
+      "identifiers": {
+        "CVE": [],
+        "CWE": [
+          "CWE-362"
+        ],
+        "PVE": [
+          "PVE-2024-71199",
+          "PVE-2024-72487"
+        ]
+      },
+      "packageName": "anyio",
+      "proprietary": false,
+      "creationTime": "2024-06-24T14:34:10.199479Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2024-06-01T06:29:24Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "pip",
+      "publicationTime": "2024-06-24T14:34:10.405746Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-09-01T17:24:38.496732Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "app@0.1.0",
+        "uvicorn@0.24.0.post1",
+        "watchfiles@0.21.0",
+        "anyio@4.3.0"
+      ],
+      "upgradePath": [
+        false,
+        "uvicorn@0.24.0.post1"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "anyio",
+      "version": "4.3.0"
+    },
+    {
+      "id": "SNYK-PYTHON-ANYIO-7361842",
+      "title": "Race Condition",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:H",
+      "credit": [
+        "Daniel Robbins"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,4.4.0)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "4.4.0"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "high",
+      "cvssScore": 8.3,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "anyio",
+      "references": [
+        {
+          "url": "https://github.com/agronholm/anyio/commit/8e8b7f55ce09729639d2220c148f6820dc7b4901",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/agronholm/anyio/issues/425",
+          "title": "GitHub Issue"
+        }
+      ],
+      "cvssDetails": [],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/VI:N/VA:H/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 8.3,
+          "cvssVersion": "4.0",
+          "modificationTime": "2024-09-01T17:24:38.496732Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:H",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-09-01T17:24:38.496732Z"
+        }
+      ],
+      "description": "## Overview\n[anyio](https://pypi.org/project/anyio) is a High level compatibility layer for multiple asynchronous event loop implementations\n\nAffected versions of this package are vulnerable to Race Condition in `_eventloop.get_asynclib()` that cause crashes when multiple event loops of the same backend are running in separate threads and simultaneously attempting to use AnyIO for the first time.\n## Remediation\nUpgrade `anyio` to version 4.4.0 or higher.\n## References\n- [GitHub Commit](https://github.com/agronholm/anyio/commit/8e8b7f55ce09729639d2220c148f6820dc7b4901)\n- [GitHub Issue](https://github.com/agronholm/anyio/issues/425)\n",
+      "epssDetails": null,
+      "identifiers": {
+        "CVE": [],
+        "CWE": [
+          "CWE-362"
+        ],
+        "PVE": [
+          "PVE-2024-71199",
+          "PVE-2024-72487"
+        ]
+      },
+      "packageName": "anyio",
+      "proprietary": false,
+      "creationTime": "2024-06-24T14:34:10.199479Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2024-06-01T06:29:24Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "pip",
+      "publicationTime": "2024-06-24T14:34:10.405746Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-09-01T17:24:38.496732Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "app@0.1.0",
+        "fastapi@0.109.2",
+        "starlette@0.36.3",
+        "anyio@4.3.0"
+      ],
+      "upgradePath": [
+        false,
+        "fastapi@0.109.2"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "anyio",
+      "version": "4.3.0"
+    },
+    {
+      "id": "SNYK-PYTHON-ANYIO-7361842",
+      "title": "Race Condition",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:H",
+      "credit": [
+        "Daniel Robbins"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,4.4.0)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "4.4.0"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "high",
+      "cvssScore": 8.3,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "anyio",
+      "references": [
+        {
+          "url": "https://github.com/agronholm/anyio/commit/8e8b7f55ce09729639d2220c148f6820dc7b4901",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/agronholm/anyio/issues/425",
+          "title": "GitHub Issue"
+        }
+      ],
+      "cvssDetails": [],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/VI:N/VA:H/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 8.3,
+          "cvssVersion": "4.0",
+          "modificationTime": "2024-09-01T17:24:38.496732Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:H",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-09-01T17:24:38.496732Z"
+        }
+      ],
+      "description": "## Overview\n[anyio](https://pypi.org/project/anyio) is a High level compatibility layer for multiple asynchronous event loop implementations\n\nAffected versions of this package are vulnerable to Race Condition in `_eventloop.get_asynclib()` that cause crashes when multiple event loops of the same backend are running in separate threads and simultaneously attempting to use AnyIO for the first time.\n## Remediation\nUpgrade `anyio` to version 4.4.0 or higher.\n## References\n- [GitHub Commit](https://github.com/agronholm/anyio/commit/8e8b7f55ce09729639d2220c148f6820dc7b4901)\n- [GitHub Issue](https://github.com/agronholm/anyio/issues/425)\n",
+      "epssDetails": null,
+      "identifiers": {
+        "CVE": [],
+        "CWE": [
+          "CWE-362"
+        ],
+        "PVE": [
+          "PVE-2024-71199",
+          "PVE-2024-72487"
+        ]
+      },
+      "packageName": "anyio",
+      "proprietary": false,
+      "creationTime": "2024-06-24T14:34:10.199479Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2024-06-01T06:29:24Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "pip",
+      "publicationTime": "2024-06-24T14:34:10.405746Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-09-01T17:24:38.496732Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "app@0.1.0",
+        "sentry-sdk@1.41.0",
+        "fastapi@0.109.2",
+        "starlette@0.36.3",
+        "anyio@4.3.0"
+      ],
+      "upgradePath": [
+        false,
+        "sentry-sdk@1.41.0"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "anyio",
+      "version": "4.3.0"
+    },
+    {
+      "id": "SNYK-PYTHON-CERTIFI-7430173",
+      "title": "Insufficient Verification of Data Authenticity",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:H/A:N",
+      "credit": [
+        "Unknown"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[2021.5.30,2024.7.4)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "2024.7.4"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "medium",
+      "cvssScore": 6.1,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "certifi",
+      "references": [
+        {
+          "url": "https://github.com/certifi/python-certifi/commit/bd8153872e9c6fc98f4023df9c2deaffea2fa463",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/XpknYMPO8dI",
+          "title": "Mozilla Root Discussion"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "low",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+          "cvssV3BaseScore": 3.7,
+          "modificationTime": "2024-07-06T13:34:59.030186Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:N/VI:L/VA:N/SC:N/SI:H/SA:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.1,
+          "cvssVersion": "4.0",
+          "modificationTime": "2024-07-07T07:05:51.879707Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:H/A:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-07-07T07:05:51.879707Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+          "assigner": "Red Hat",
+          "severity": "low",
+          "baseScore": 3.7,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-07-06T13:34:59.030186Z"
+        }
+      ],
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Insufficient Verification of Data Authenticity due to the presence of the root certificate for GLOBALTRUST in the root store. The root certificates are being removed pursuant to an investigation into non-compliance.\n## Remediation\nUpgrade `certifi` to version 2024.7.4 or higher.\n## References\n- [GitHub Commit](https://github.com/certifi/python-certifi/commit/bd8153872e9c6fc98f4023df9c2deaffea2fa463)\n- [Mozilla Root Discussion](https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/XpknYMPO8dI)\n",
+      "epssDetails": {
+        "percentile": "0.16703",
+        "probability": "0.00045",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-39689"
+        ],
+        "CWE": [
+          "CWE-345"
+        ],
+        "GHSA": [
+          "GHSA-248v-346w-9cwc"
+        ]
+      },
+      "packageName": "certifi",
+      "proprietary": false,
+      "creationTime": "2024-07-07T07:05:51.503381Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2024-07-05T20:06:40Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "pip",
+      "publicationTime": "2024-07-07T07:05:51.759398Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-07-07T07:05:51.879707Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "app@0.1.0",
+        "httpx@0.25.2",
+        "certifi@2024.2.2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "certifi",
+      "version": "2024.2.2"
+    },
+    {
+      "id": "SNYK-PYTHON-CERTIFI-7430173",
+      "title": "Insufficient Verification of Data Authenticity",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:H/A:N",
+      "credit": [
+        "Unknown"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[2021.5.30,2024.7.4)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "2024.7.4"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "medium",
+      "cvssScore": 6.1,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "certifi",
+      "references": [
+        {
+          "url": "https://github.com/certifi/python-certifi/commit/bd8153872e9c6fc98f4023df9c2deaffea2fa463",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/XpknYMPO8dI",
+          "title": "Mozilla Root Discussion"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "low",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+          "cvssV3BaseScore": 3.7,
+          "modificationTime": "2024-07-06T13:34:59.030186Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:N/VI:L/VA:N/SC:N/SI:H/SA:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.1,
+          "cvssVersion": "4.0",
+          "modificationTime": "2024-07-07T07:05:51.879707Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:H/A:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-07-07T07:05:51.879707Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+          "assigner": "Red Hat",
+          "severity": "low",
+          "baseScore": 3.7,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-07-06T13:34:59.030186Z"
+        }
+      ],
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Insufficient Verification of Data Authenticity due to the presence of the root certificate for GLOBALTRUST in the root store. The root certificates are being removed pursuant to an investigation into non-compliance.\n## Remediation\nUpgrade `certifi` to version 2024.7.4 or higher.\n## References\n- [GitHub Commit](https://github.com/certifi/python-certifi/commit/bd8153872e9c6fc98f4023df9c2deaffea2fa463)\n- [Mozilla Root Discussion](https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/XpknYMPO8dI)\n",
+      "epssDetails": {
+        "percentile": "0.16703",
+        "probability": "0.00045",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-39689"
+        ],
+        "CWE": [
+          "CWE-345"
+        ],
+        "GHSA": [
+          "GHSA-248v-346w-9cwc"
+        ]
+      },
+      "packageName": "certifi",
+      "proprietary": false,
+      "creationTime": "2024-07-07T07:05:51.503381Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2024-07-05T20:06:40Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "pip",
+      "publicationTime": "2024-07-07T07:05:51.759398Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-07-07T07:05:51.879707Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "app@0.1.0",
+        "sentry-sdk@1.41.0",
+        "certifi@2024.2.2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "certifi",
+      "version": "2024.2.2"
+    },
+    {
+      "id": "SNYK-PYTHON-CERTIFI-7430173",
+      "title": "Insufficient Verification of Data Authenticity",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:H/A:N",
+      "credit": [
+        "Unknown"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[2021.5.30,2024.7.4)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "2024.7.4"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "medium",
+      "cvssScore": 6.1,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "certifi",
+      "references": [
+        {
+          "url": "https://github.com/certifi/python-certifi/commit/bd8153872e9c6fc98f4023df9c2deaffea2fa463",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/XpknYMPO8dI",
+          "title": "Mozilla Root Discussion"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "low",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+          "cvssV3BaseScore": 3.7,
+          "modificationTime": "2024-07-06T13:34:59.030186Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:N/VI:L/VA:N/SC:N/SI:H/SA:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.1,
+          "cvssVersion": "4.0",
+          "modificationTime": "2024-07-07T07:05:51.879707Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:H/A:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-07-07T07:05:51.879707Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+          "assigner": "Red Hat",
+          "severity": "low",
+          "baseScore": 3.7,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-07-06T13:34:59.030186Z"
+        }
+      ],
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Insufficient Verification of Data Authenticity due to the presence of the root certificate for GLOBALTRUST in the root store. The root certificates are being removed pursuant to an investigation into non-compliance.\n## Remediation\nUpgrade `certifi` to version 2024.7.4 or higher.\n## References\n- [GitHub Commit](https://github.com/certifi/python-certifi/commit/bd8153872e9c6fc98f4023df9c2deaffea2fa463)\n- [Mozilla Root Discussion](https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/XpknYMPO8dI)\n",
+      "epssDetails": {
+        "percentile": "0.16703",
+        "probability": "0.00045",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-39689"
+        ],
+        "CWE": [
+          "CWE-345"
+        ],
+        "GHSA": [
+          "GHSA-248v-346w-9cwc"
+        ]
+      },
+      "packageName": "certifi",
+      "proprietary": false,
+      "creationTime": "2024-07-07T07:05:51.503381Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2024-07-05T20:06:40Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "pip",
+      "publicationTime": "2024-07-07T07:05:51.759398Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-07-07T07:05:51.879707Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "app@0.1.0",
+        "emails@0.6",
+        "requests@2.32.3",
+        "certifi@2024.2.2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "certifi",
+      "version": "2024.2.2"
+    },
+    {
+      "id": "SNYK-PYTHON-CERTIFI-7430173",
+      "title": "Insufficient Verification of Data Authenticity",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:H/A:N",
+      "credit": [
+        "Unknown"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[2021.5.30,2024.7.4)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "2024.7.4"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "medium",
+      "cvssScore": 6.1,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "certifi",
+      "references": [
+        {
+          "url": "https://github.com/certifi/python-certifi/commit/bd8153872e9c6fc98f4023df9c2deaffea2fa463",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/XpknYMPO8dI",
+          "title": "Mozilla Root Discussion"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "low",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+          "cvssV3BaseScore": 3.7,
+          "modificationTime": "2024-07-06T13:34:59.030186Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:N/VI:L/VA:N/SC:N/SI:H/SA:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.1,
+          "cvssVersion": "4.0",
+          "modificationTime": "2024-07-07T07:05:51.879707Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:H/A:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-07-07T07:05:51.879707Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+          "assigner": "Red Hat",
+          "severity": "low",
+          "baseScore": 3.7,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-07-06T13:34:59.030186Z"
+        }
+      ],
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Insufficient Verification of Data Authenticity due to the presence of the root certificate for GLOBALTRUST in the root store. The root certificates are being removed pursuant to an investigation into non-compliance.\n## Remediation\nUpgrade `certifi` to version 2024.7.4 or higher.\n## References\n- [GitHub Commit](https://github.com/certifi/python-certifi/commit/bd8153872e9c6fc98f4023df9c2deaffea2fa463)\n- [Mozilla Root Discussion](https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/XpknYMPO8dI)\n",
+      "epssDetails": {
+        "percentile": "0.16703",
+        "probability": "0.00045",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-39689"
+        ],
+        "CWE": [
+          "CWE-345"
+        ],
+        "GHSA": [
+          "GHSA-248v-346w-9cwc"
+        ]
+      },
+      "packageName": "certifi",
+      "proprietary": false,
+      "creationTime": "2024-07-07T07:05:51.503381Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2024-07-05T20:06:40Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "pip",
+      "publicationTime": "2024-07-07T07:05:51.759398Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-07-07T07:05:51.879707Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "app@0.1.0",
+        "httpx@0.25.2",
+        "httpcore@1.0.4",
+        "certifi@2024.2.2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "certifi",
+      "version": "2024.2.2"
+    },
+    {
+      "id": "SNYK-PYTHON-CERTIFI-7430173",
+      "title": "Insufficient Verification of Data Authenticity",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:H/A:N",
+      "credit": [
+        "Unknown"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[2021.5.30,2024.7.4)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "2024.7.4"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "medium",
+      "cvssScore": 6.1,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "certifi",
+      "references": [
+        {
+          "url": "https://github.com/certifi/python-certifi/commit/bd8153872e9c6fc98f4023df9c2deaffea2fa463",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/XpknYMPO8dI",
+          "title": "Mozilla Root Discussion"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "low",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+          "cvssV3BaseScore": 3.7,
+          "modificationTime": "2024-07-06T13:34:59.030186Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:N/VI:L/VA:N/SC:N/SI:H/SA:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.1,
+          "cvssVersion": "4.0",
+          "modificationTime": "2024-07-07T07:05:51.879707Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:H/A:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-07-07T07:05:51.879707Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+          "assigner": "Red Hat",
+          "severity": "low",
+          "baseScore": 3.7,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-07-06T13:34:59.030186Z"
+        }
+      ],
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Insufficient Verification of Data Authenticity due to the presence of the root certificate for GLOBALTRUST in the root store. The root certificates are being removed pursuant to an investigation into non-compliance.\n## Remediation\nUpgrade `certifi` to version 2024.7.4 or higher.\n## References\n- [GitHub Commit](https://github.com/certifi/python-certifi/commit/bd8153872e9c6fc98f4023df9c2deaffea2fa463)\n- [Mozilla Root Discussion](https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/XpknYMPO8dI)\n",
+      "epssDetails": {
+        "percentile": "0.16703",
+        "probability": "0.00045",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-39689"
+        ],
+        "CWE": [
+          "CWE-345"
+        ],
+        "GHSA": [
+          "GHSA-248v-346w-9cwc"
+        ]
+      },
+      "packageName": "certifi",
+      "proprietary": false,
+      "creationTime": "2024-07-07T07:05:51.503381Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2024-07-05T20:06:40Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "pip",
+      "publicationTime": "2024-07-07T07:05:51.759398Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-07-07T07:05:51.879707Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "app@0.1.0",
+        "emails@0.6",
+        "premailer@3.10.0",
+        "requests@2.32.3",
+        "certifi@2024.2.2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "certifi",
+      "version": "2024.2.2"
+    },
+    {
+      "id": "SNYK-PYTHON-SENTRYSDK-7541801",
+      "title": "Information Exposure",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:L/I:N/A:N",
+      "credit": [
+        "Kevin Michel"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,2.8.0)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "2.8.0"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "low",
+      "cvssScore": 1.8,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "sentry-sdk",
+      "references": [
+        {
+          "url": "https://github.com/getsentry/sentry-python/commit/763e40aa4cb57ecced467f48f78f335c87e9bdff",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/getsentry/sentry-python/pull/3251",
+          "title": "GitHub PR"
+        }
+      ],
+      "cvssDetails": [],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:H/UI:N/VC:L/VI:N/VA:N/SC:L/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "low",
+          "baseScore": 1.8,
+          "cvssVersion": "4.0",
+          "modificationTime": "2024-07-19T06:20:34.226999Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:L/I:N/A:N",
+          "assigner": "Snyk",
+          "severity": "low",
+          "baseScore": 2.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-07-19T06:20:34.226999Z"
+        }
+      ],
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Information Exposure due to all environment variables being passed to the subprocesses when `env={}` is set. This vulnerability could lead to unintentional exposure of environment variables to subprocesses despite the `env={}` setting, unless the Sentry SDK's Stdlib integration is disabled.\r\n\r\n**Note:**\r\n\r\nThe Stdlib integration is enabled by default.\r\n\r\n## Workaround\r\n\r\n1) Replace `env={}` with the minimal dict `env={\"EMPTY_ENV\":\"1\"}` or similar.\r\n\r\n2) Disable `Stdlib` integration.\n## Remediation\nUpgrade `sentry-sdk` to version 2.8.0 or higher.\n## References\n- [GitHub Commit](https://github.com/getsentry/sentry-python/commit/763e40aa4cb57ecced467f48f78f335c87e9bdff)\n- [GitHub PR](https://github.com/getsentry/sentry-python/pull/3251)\n",
+      "epssDetails": {
+        "percentile": "0.11343",
+        "probability": "0.00044",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-40647"
+        ],
+        "CWE": [
+          "CWE-200"
+        ],
+        "GHSA": [
+          "GHSA-g92j-qhmh-64v2"
+        ]
+      },
+      "packageName": "sentry-sdk",
+      "proprietary": false,
+      "creationTime": "2024-07-19T05:08:24.338300Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2024-07-18T17:18:46Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "pip",
+      "publicationTime": "2024-07-19T06:20:34.226701Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-07-19T06:20:34.226999Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "low",
+      "from": [
+        "app@0.1.0",
+        "sentry-sdk@1.41.0"
+      ],
+      "upgradePath": [
+        false,
+        "sentry-sdk@2.8.0"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "sentry-sdk",
+      "version": "1.41.0"
+    },
+    {
+      "id": "SNYK-PYTHON-STARLETTE-8186175",
+      "title": "Allocation of Resources Without Limits or Throttling",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:P",
+      "credit": [
+        "Marcel Hellkamp"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,0.40.0)"
+        ]
+      },
+      "exploit": "Proof of Concept",
+      "fixedIn": [
+        "0.40.0"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "high",
+      "cvssScore": 8.7,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "starlette",
+      "references": [
+        {
+          "url": "https://github.com/encode/starlette/commit/fd038f3070c302bff17ef7d173dbb0b007617733",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/encode/starlette/releases/tag/0.40.0",
+          "title": "GitHub Release"
+        }
+      ],
+      "cvssDetails": [],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:P",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 8.7,
+          "cvssVersion": "4.0",
+          "modificationTime": "2024-10-15T14:46:17.033387Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:P",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-10-15T14:46:17.033387Z"
+        }
+      ],
+      "description": "## Overview\n[starlette](https://www.pypi.org/project/starlette) is a The little ASGI library that shines.\n\nAffected versions of this package are vulnerable to Allocation of Resources Without Limits or Throttling via `multipart/form-data` requests, due to treating parts without a `filename` as text form fields and buffering those in byte strings with no size limit. \r\n\r\nAn attacker could cause `Starlette` to both slow down significantly due to excessive memory allocations and copy operations, and also consume more and more memory until the server starts swapping and grinds to a halt by uploading arbitrary large form fields.\r\n\r\n**Note:**\r\n\r\nThis vulnerability affects all applications built with `Starlette` (or `FastAPI`) accepting form requests.\n## PoC\n```\r\nfrom starlette.applications import Starlette\r\nfrom starlette.routing import Route\r\n\r\nasync def poc(request):\r\n    async with request.form():\r\n        pass\r\n\r\napp = Starlette(routes=[\r\n    Route('/', poc, methods=[\"POST\"]),\r\n])\r\n```\r\n\r\n```\r\ncurl http://localhost:8000 -F 'big=</dev/urandom'\r\n```\n## Remediation\nUpgrade `starlette` to version 0.40.0 or higher.\n## References\n- [GitHub Commit](https://github.com/encode/starlette/commit/fd038f3070c302bff17ef7d173dbb0b007617733)\n- [GitHub Release](https://github.com/encode/starlette/releases/tag/0.40.0)\n",
+      "epssDetails": {
+        "percentile": "0.10007",
+        "probability": "0.00043",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-47874"
+        ],
+        "CWE": [
+          "CWE-770"
+        ],
+        "GHSA": [
+          "GHSA-f96h-pmfr-66vw"
+        ]
+      },
+      "packageName": "starlette",
+      "proprietary": false,
+      "creationTime": "2024-10-15T10:32:26.227268Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2024-10-15T06:49:52Z",
+      "exploitDetails": {
+        "sources": [
+          "Snyk"
+        ],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Proof of Concept",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Proof of Concept",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "pip",
+      "publicationTime": "2024-10-15T14:46:17.016352Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-10-15T14:46:17.033387Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "app@0.1.0",
+        "fastapi@0.109.2",
+        "starlette@0.36.3"
+      ],
+      "upgradePath": [
+        false,
+        "fastapi@0.109.2"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "starlette",
+      "version": "0.36.3"
+    },
+    {
+      "id": "SNYK-PYTHON-STARLETTE-8186175",
+      "title": "Allocation of Resources Without Limits or Throttling",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:P",
+      "credit": [
+        "Marcel Hellkamp"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,0.40.0)"
+        ]
+      },
+      "exploit": "Proof of Concept",
+      "fixedIn": [
+        "0.40.0"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "high",
+      "cvssScore": 8.7,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "starlette",
+      "references": [
+        {
+          "url": "https://github.com/encode/starlette/commit/fd038f3070c302bff17ef7d173dbb0b007617733",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/encode/starlette/releases/tag/0.40.0",
+          "title": "GitHub Release"
+        }
+      ],
+      "cvssDetails": [],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:P",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 8.7,
+          "cvssVersion": "4.0",
+          "modificationTime": "2024-10-15T14:46:17.033387Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:P",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-10-15T14:46:17.033387Z"
+        }
+      ],
+      "description": "## Overview\n[starlette](https://www.pypi.org/project/starlette) is a The little ASGI library that shines.\n\nAffected versions of this package are vulnerable to Allocation of Resources Without Limits or Throttling via `multipart/form-data` requests, due to treating parts without a `filename` as text form fields and buffering those in byte strings with no size limit. \r\n\r\nAn attacker could cause `Starlette` to both slow down significantly due to excessive memory allocations and copy operations, and also consume more and more memory until the server starts swapping and grinds to a halt by uploading arbitrary large form fields.\r\n\r\n**Note:**\r\n\r\nThis vulnerability affects all applications built with `Starlette` (or `FastAPI`) accepting form requests.\n## PoC\n```\r\nfrom starlette.applications import Starlette\r\nfrom starlette.routing import Route\r\n\r\nasync def poc(request):\r\n    async with request.form():\r\n        pass\r\n\r\napp = Starlette(routes=[\r\n    Route('/', poc, methods=[\"POST\"]),\r\n])\r\n```\r\n\r\n```\r\ncurl http://localhost:8000 -F 'big=</dev/urandom'\r\n```\n## Remediation\nUpgrade `starlette` to version 0.40.0 or higher.\n## References\n- [GitHub Commit](https://github.com/encode/starlette/commit/fd038f3070c302bff17ef7d173dbb0b007617733)\n- [GitHub Release](https://github.com/encode/starlette/releases/tag/0.40.0)\n",
+      "epssDetails": {
+        "percentile": "0.10007",
+        "probability": "0.00043",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-47874"
+        ],
+        "CWE": [
+          "CWE-770"
+        ],
+        "GHSA": [
+          "GHSA-f96h-pmfr-66vw"
+        ]
+      },
+      "packageName": "starlette",
+      "proprietary": false,
+      "creationTime": "2024-10-15T10:32:26.227268Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2024-10-15T06:49:52Z",
+      "exploitDetails": {
+        "sources": [
+          "Snyk"
+        ],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Proof of Concept",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Proof of Concept",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "pip",
+      "publicationTime": "2024-10-15T14:46:17.016352Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-10-15T14:46:17.033387Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "app@0.1.0",
+        "sentry-sdk@1.41.0",
+        "fastapi@0.109.2",
+        "starlette@0.36.3"
+      ],
+      "upgradePath": [
+        false,
+        "sentry-sdk@1.41.0"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "starlette",
+      "version": "0.36.3"
+    },
+    {
+      "id": "SNYK-PYTHON-URLLIB3-7267250",
+      "title": "Improper Removal of Sensitive Information Before Storage or Transfer",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "credit": [
+        "Unknown"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,1.26.19)",
+          "[2.0.0a1, 2.2.2)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.26.19",
+        "2.2.2"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "medium",
+      "cvssScore": 6,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "urllib3",
+      "references": [
+        {
+          "url": "https://github.com/urllib3/urllib3/commit/40b6d1605814dd1db0a46e202d6e56f2e4c9a468",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/urllib3/urllib3/commit/accff72ecc2f6cf5a76d9570198a93ac7c90270e",
+          "title": "GitHub Commit"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 4.4,
+          "modificationTime": "2024-06-19T13:35:21.960816Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 4.4,
+          "modificationTime": "2024-07-10T05:27:00.951176Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:H/VI:N/VA:N/SC:L/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6,
+          "cvssVersion": "4.0",
+          "modificationTime": "2024-06-18T08:23:45.878215Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 5.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-06-18T08:23:45.878215Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 4.4,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-06-19T13:35:21.960816Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+          "assigner": "SUSE",
+          "severity": "medium",
+          "baseScore": 4.4,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-07-10T05:27:00.951176Z"
+        }
+      ],
+      "description": "## Overview\n[urllib3](https://pypi.org/project/urllib3/) is a HTTP library with thread-safe connection pooling, file post, and more.\n\nAffected versions of this package are vulnerable to Improper Removal of Sensitive Information Before Storage or Transfer due to the improper handling of the `Proxy-Authorization` header during cross-origin redirects when `ProxyManager` is not in use. When the conditions below are met, including non-recommended configurations, the contents of this header can be sent in an automatic HTTP redirect.\r\n\r\n**Notes:**\r\n\r\nTo be vulnerable, the application must be doing all of the following:\r\n\r\n1) Setting the `Proxy-Authorization` header without using urllib3's built-in proxy support.\r\n\r\n2) Not disabling HTTP redirects (e.g. with `redirects=False`)\r\n\r\n3) Either not using an HTTPS origin server, or having a proxy or target origin that redirects to a malicious origin.\r\n\r\n## Workarounds\r\n\r\n1) Using the `Proxy-Authorization` header with urllib3's `ProxyManager`.\r\n\r\n2) Disabling HTTP redirects using `redirects=False` when sending requests.\r\n\r\n3) Not using the `Proxy-Authorization` header.\n## Remediation\nUpgrade `urllib3` to version 1.26.19, 2.2.2 or higher.\n## References\n- [GitHub Commit](https://github.com/urllib3/urllib3/commit/40b6d1605814dd1db0a46e202d6e56f2e4c9a468)\n- [GitHub Commit](https://github.com/urllib3/urllib3/commit/accff72ecc2f6cf5a76d9570198a93ac7c90270e)\n",
+      "epssDetails": {
+        "percentile": "0.10007",
+        "probability": "0.00043",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-37891"
+        ],
+        "CWE": [
+          "CWE-212"
+        ],
+        "GHSA": [
+          "GHSA-34jh-p97f-mpxf"
+        ]
+      },
+      "packageName": "urllib3",
+      "proprietary": false,
+      "creationTime": "2024-06-18T07:00:05.360687Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2024-06-17T21:37:20Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "pip",
+      "publicationTime": "2024-06-18T08:23:45.877974Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-07-10T05:27:00.951176Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "app@0.1.0",
+        "sentry-sdk@1.41.0",
+        "urllib3@2.2.1"
+      ],
+      "upgradePath": [
+        false,
+        "sentry-sdk@1.41.0"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "urllib3",
+      "version": "2.2.1"
+    },
+    {
+      "id": "SNYK-PYTHON-URLLIB3-7267250",
+      "title": "Improper Removal of Sensitive Information Before Storage or Transfer",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "credit": [
+        "Unknown"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,1.26.19)",
+          "[2.0.0a1, 2.2.2)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.26.19",
+        "2.2.2"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "medium",
+      "cvssScore": 6,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "urllib3",
+      "references": [
+        {
+          "url": "https://github.com/urllib3/urllib3/commit/40b6d1605814dd1db0a46e202d6e56f2e4c9a468",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/urllib3/urllib3/commit/accff72ecc2f6cf5a76d9570198a93ac7c90270e",
+          "title": "GitHub Commit"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 4.4,
+          "modificationTime": "2024-06-19T13:35:21.960816Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 4.4,
+          "modificationTime": "2024-07-10T05:27:00.951176Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:H/VI:N/VA:N/SC:L/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6,
+          "cvssVersion": "4.0",
+          "modificationTime": "2024-06-18T08:23:45.878215Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 5.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-06-18T08:23:45.878215Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 4.4,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-06-19T13:35:21.960816Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+          "assigner": "SUSE",
+          "severity": "medium",
+          "baseScore": 4.4,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-07-10T05:27:00.951176Z"
+        }
+      ],
+      "description": "## Overview\n[urllib3](https://pypi.org/project/urllib3/) is a HTTP library with thread-safe connection pooling, file post, and more.\n\nAffected versions of this package are vulnerable to Improper Removal of Sensitive Information Before Storage or Transfer due to the improper handling of the `Proxy-Authorization` header during cross-origin redirects when `ProxyManager` is not in use. When the conditions below are met, including non-recommended configurations, the contents of this header can be sent in an automatic HTTP redirect.\r\n\r\n**Notes:**\r\n\r\nTo be vulnerable, the application must be doing all of the following:\r\n\r\n1) Setting the `Proxy-Authorization` header without using urllib3's built-in proxy support.\r\n\r\n2) Not disabling HTTP redirects (e.g. with `redirects=False`)\r\n\r\n3) Either not using an HTTPS origin server, or having a proxy or target origin that redirects to a malicious origin.\r\n\r\n## Workarounds\r\n\r\n1) Using the `Proxy-Authorization` header with urllib3's `ProxyManager`.\r\n\r\n2) Disabling HTTP redirects using `redirects=False` when sending requests.\r\n\r\n3) Not using the `Proxy-Authorization` header.\n## Remediation\nUpgrade `urllib3` to version 1.26.19, 2.2.2 or higher.\n## References\n- [GitHub Commit](https://github.com/urllib3/urllib3/commit/40b6d1605814dd1db0a46e202d6e56f2e4c9a468)\n- [GitHub Commit](https://github.com/urllib3/urllib3/commit/accff72ecc2f6cf5a76d9570198a93ac7c90270e)\n",
+      "epssDetails": {
+        "percentile": "0.10007",
+        "probability": "0.00043",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-37891"
+        ],
+        "CWE": [
+          "CWE-212"
+        ],
+        "GHSA": [
+          "GHSA-34jh-p97f-mpxf"
+        ]
+      },
+      "packageName": "urllib3",
+      "proprietary": false,
+      "creationTime": "2024-06-18T07:00:05.360687Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2024-06-17T21:37:20Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "pip",
+      "publicationTime": "2024-06-18T08:23:45.877974Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-07-10T05:27:00.951176Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "app@0.1.0",
+        "emails@0.6",
+        "requests@2.32.3",
+        "urllib3@2.2.1"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "urllib3",
+      "version": "2.2.1"
+    },
+    {
+      "id": "SNYK-PYTHON-URLLIB3-7267250",
+      "title": "Improper Removal of Sensitive Information Before Storage or Transfer",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "credit": [
+        "Unknown"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,1.26.19)",
+          "[2.0.0a1, 2.2.2)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.26.19",
+        "2.2.2"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "medium",
+      "cvssScore": 6,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "urllib3",
+      "references": [
+        {
+          "url": "https://github.com/urllib3/urllib3/commit/40b6d1605814dd1db0a46e202d6e56f2e4c9a468",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/urllib3/urllib3/commit/accff72ecc2f6cf5a76d9570198a93ac7c90270e",
+          "title": "GitHub Commit"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 4.4,
+          "modificationTime": "2024-06-19T13:35:21.960816Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 4.4,
+          "modificationTime": "2024-07-10T05:27:00.951176Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:H/VI:N/VA:N/SC:L/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6,
+          "cvssVersion": "4.0",
+          "modificationTime": "2024-06-18T08:23:45.878215Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 5.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-06-18T08:23:45.878215Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 4.4,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-06-19T13:35:21.960816Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+          "assigner": "SUSE",
+          "severity": "medium",
+          "baseScore": 4.4,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-07-10T05:27:00.951176Z"
+        }
+      ],
+      "description": "## Overview\n[urllib3](https://pypi.org/project/urllib3/) is a HTTP library with thread-safe connection pooling, file post, and more.\n\nAffected versions of this package are vulnerable to Improper Removal of Sensitive Information Before Storage or Transfer due to the improper handling of the `Proxy-Authorization` header during cross-origin redirects when `ProxyManager` is not in use. When the conditions below are met, including non-recommended configurations, the contents of this header can be sent in an automatic HTTP redirect.\r\n\r\n**Notes:**\r\n\r\nTo be vulnerable, the application must be doing all of the following:\r\n\r\n1) Setting the `Proxy-Authorization` header without using urllib3's built-in proxy support.\r\n\r\n2) Not disabling HTTP redirects (e.g. with `redirects=False`)\r\n\r\n3) Either not using an HTTPS origin server, or having a proxy or target origin that redirects to a malicious origin.\r\n\r\n## Workarounds\r\n\r\n1) Using the `Proxy-Authorization` header with urllib3's `ProxyManager`.\r\n\r\n2) Disabling HTTP redirects using `redirects=False` when sending requests.\r\n\r\n3) Not using the `Proxy-Authorization` header.\n## Remediation\nUpgrade `urllib3` to version 1.26.19, 2.2.2 or higher.\n## References\n- [GitHub Commit](https://github.com/urllib3/urllib3/commit/40b6d1605814dd1db0a46e202d6e56f2e4c9a468)\n- [GitHub Commit](https://github.com/urllib3/urllib3/commit/accff72ecc2f6cf5a76d9570198a93ac7c90270e)\n",
+      "epssDetails": {
+        "percentile": "0.10007",
+        "probability": "0.00043",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-37891"
+        ],
+        "CWE": [
+          "CWE-212"
+        ],
+        "GHSA": [
+          "GHSA-34jh-p97f-mpxf"
+        ]
+      },
+      "packageName": "urllib3",
+      "proprietary": false,
+      "creationTime": "2024-06-18T07:00:05.360687Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2024-06-17T21:37:20Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "pip",
+      "publicationTime": "2024-06-18T08:23:45.877974Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-07-10T05:27:00.951176Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "app@0.1.0",
+        "emails@0.6",
+        "premailer@3.10.0",
+        "requests@2.32.3",
+        "urllib3@2.2.1"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "urllib3",
+      "version": "2.2.1"
+    }
+  ],
+  "ok": false,
+  "dependencyCount": 56,
+  "org": "wowo-chukwudi-6eWfK2kHMY3AFEMmy8oJFi",
+  "policy": "# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.\nversion: v1.25.1\nignore: {}\npatch: {}\n",
+  "isPrivate": true,
+  "licensesPolicy": {
+    "severities": {},
+    "orgLicenseRules": {
+      "AGPL-1.0": {
+        "licenseType": "AGPL-1.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "AGPL-3.0": {
+        "licenseType": "AGPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "Artistic-1.0": {
+        "licenseType": "Artistic-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "Artistic-2.0": {
+        "licenseType": "Artistic-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CDDL-1.0": {
+        "licenseType": "CDDL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CPOL-1.02": {
+        "licenseType": "CPOL-1.02",
+        "severity": "high",
+        "instructions": ""
+      },
+      "EPL-1.0": {
+        "licenseType": "EPL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "GPL-2.0": {
+        "licenseType": "GPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "GPL-3.0": {
+        "licenseType": "GPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "LGPL-2.0": {
+        "licenseType": "LGPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-2.1": {
+        "licenseType": "LGPL-2.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-3.0": {
+        "licenseType": "LGPL-3.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-1.1": {
+        "licenseType": "MPL-1.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-2.0": {
+        "licenseType": "MPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MS-RL": {
+        "licenseType": "MS-RL",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "SimPL-2.0": {
+        "licenseType": "SimPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      }
+    }
+  },
+  "packageManager": "poetry",
+  "ignoreSettings": {
+    "adminOnly": false,
+    "reasonRequired": false,
+    "disregardFilesystemIgnores": false,
+    "autoApproveIgnores": false
+  },
+  "summary": "15 vulnerable dependency paths",
+  "remediation": {
+    "unresolved": [
+      {
+        "id": "SNYK-PYTHON-ANYIO-7361842",
+        "title": "Race Condition",
+        "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:H",
+        "credit": [
+          "Daniel Robbins"
+        ],
+        "semver": {
+          "vulnerable": [
+            "[,4.4.0)"
+          ]
+        },
+        "exploit": "Not Defined",
+        "fixedIn": [
+          "4.4.0"
+        ],
+        "patches": [],
+        "insights": {
+          "triageAdvice": null
+        },
+        "language": "python",
+        "severity": "high",
+        "cvssScore": 8.3,
+        "functions": [],
+        "malicious": false,
+        "isDisputed": false,
+        "moduleName": "anyio",
+        "references": [
+          {
+            "url": "https://github.com/agronholm/anyio/commit/8e8b7f55ce09729639d2220c148f6820dc7b4901",
+            "title": "GitHub Commit"
+          },
+          {
+            "url": "https://github.com/agronholm/anyio/issues/425",
+            "title": "GitHub Issue"
+          }
+        ],
+        "cvssDetails": [],
+        "cvssSources": [
+          {
+            "type": "primary",
+            "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/VI:N/VA:H/SC:N/SI:N/SA:N",
+            "assigner": "Snyk",
+            "severity": "high",
+            "baseScore": 8.3,
+            "cvssVersion": "4.0",
+            "modificationTime": "2024-09-01T17:24:38.496732Z"
+          },
+          {
+            "type": "secondary",
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:H",
+            "assigner": "Snyk",
+            "severity": "medium",
+            "baseScore": 6.5,
+            "cvssVersion": "3.1",
+            "modificationTime": "2024-09-01T17:24:38.496732Z"
+          }
+        ],
+        "description": "## Overview\n[anyio](https://pypi.org/project/anyio) is a High level compatibility layer for multiple asynchronous event loop implementations\n\nAffected versions of this package are vulnerable to Race Condition in `_eventloop.get_asynclib()` that cause crashes when multiple event loops of the same backend are running in separate threads and simultaneously attempting to use AnyIO for the first time.\n## Remediation\nUpgrade `anyio` to version 4.4.0 or higher.\n## References\n- [GitHub Commit](https://github.com/agronholm/anyio/commit/8e8b7f55ce09729639d2220c148f6820dc7b4901)\n- [GitHub Issue](https://github.com/agronholm/anyio/issues/425)\n",
+        "epssDetails": null,
+        "identifiers": {
+          "CVE": [],
+          "CWE": [
+            "CWE-362"
+          ],
+          "PVE": [
+            "PVE-2024-71199",
+            "PVE-2024-72487"
+          ]
+        },
+        "packageName": "anyio",
+        "proprietary": false,
+        "creationTime": "2024-06-24T14:34:10.199479Z",
+        "functions_new": [],
+        "alternativeIds": [],
+        "disclosureTime": "2024-06-01T06:29:24Z",
+        "exploitDetails": {
+          "sources": [],
+          "maturityLevels": [
+            {
+              "type": "secondary",
+              "level": "Not Defined",
+              "format": "CVSSv3"
+            },
+            {
+              "type": "primary",
+              "level": "Not Defined",
+              "format": "CVSSv4"
+            }
+          ]
+        },
+        "packageManager": "pip",
+        "publicationTime": "2024-06-24T14:34:10.405746Z",
+        "severityBasedOn": "CVSS",
+        "modificationTime": "2024-09-01T17:24:38.496732Z",
+        "socialTrendAlert": false,
+        "packagePopularityRank": 99,
+        "from": [
+          "app@0.1.0",
+          "sentry-sdk@1.41.0",
+          "fastapi@0.109.2",
+          "starlette@0.36.3",
+          "anyio@4.3.0"
+        ],
+        "upgradePath": [
+          false,
+          "sentry-sdk@1.41.0"
+        ],
+        "isUpgradable": true,
+        "isPatchable": false,
+        "isPinnable": true,
+        "isRuntime": false,
+        "name": "anyio",
+        "version": "4.3.0",
+        "severityWithCritical": "high"
+      },
+      {
+        "id": "SNYK-PYTHON-CERTIFI-7430173",
+        "title": "Insufficient Verification of Data Authenticity",
+        "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:H/A:N",
+        "credit": [
+          "Unknown"
+        ],
+        "semver": {
+          "vulnerable": [
+            "[2021.5.30,2024.7.4)"
+          ]
+        },
+        "exploit": "Not Defined",
+        "fixedIn": [
+          "2024.7.4"
+        ],
+        "patches": [],
+        "insights": {
+          "triageAdvice": null
+        },
+        "language": "python",
+        "severity": "medium",
+        "cvssScore": 6.1,
+        "functions": [],
+        "malicious": false,
+        "isDisputed": false,
+        "moduleName": "certifi",
+        "references": [
+          {
+            "url": "https://github.com/certifi/python-certifi/commit/bd8153872e9c6fc98f4023df9c2deaffea2fa463",
+            "title": "GitHub Commit"
+          },
+          {
+            "url": "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/XpknYMPO8dI",
+            "title": "Mozilla Root Discussion"
+          }
+        ],
+        "cvssDetails": [
+          {
+            "assigner": "Red Hat",
+            "severity": "low",
+            "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+            "cvssV3BaseScore": 3.7,
+            "modificationTime": "2024-07-06T13:34:59.030186Z"
+          }
+        ],
+        "cvssSources": [
+          {
+            "type": "primary",
+            "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:N/VI:L/VA:N/SC:N/SI:H/SA:N",
+            "assigner": "Snyk",
+            "severity": "medium",
+            "baseScore": 6.1,
+            "cvssVersion": "4.0",
+            "modificationTime": "2024-07-07T07:05:51.879707Z"
+          },
+          {
+            "type": "secondary",
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:H/A:N",
+            "assigner": "Snyk",
+            "severity": "medium",
+            "baseScore": 6.8,
+            "cvssVersion": "3.1",
+            "modificationTime": "2024-07-07T07:05:51.879707Z"
+          },
+          {
+            "type": "secondary",
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+            "assigner": "Red Hat",
+            "severity": "low",
+            "baseScore": 3.7,
+            "cvssVersion": "3.1",
+            "modificationTime": "2024-07-06T13:34:59.030186Z"
+          }
+        ],
+        "description": "## Overview\n\nAffected versions of this package are vulnerable to Insufficient Verification of Data Authenticity due to the presence of the root certificate for GLOBALTRUST in the root store. The root certificates are being removed pursuant to an investigation into non-compliance.\n## Remediation\nUpgrade `certifi` to version 2024.7.4 or higher.\n## References\n- [GitHub Commit](https://github.com/certifi/python-certifi/commit/bd8153872e9c6fc98f4023df9c2deaffea2fa463)\n- [Mozilla Root Discussion](https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/XpknYMPO8dI)\n",
+        "epssDetails": {
+          "percentile": "0.16703",
+          "probability": "0.00045",
+          "modelVersion": "v2023.03.01"
+        },
+        "identifiers": {
+          "CVE": [
+            "CVE-2024-39689"
+          ],
+          "CWE": [
+            "CWE-345"
+          ],
+          "GHSA": [
+            "GHSA-248v-346w-9cwc"
+          ]
+        },
+        "packageName": "certifi",
+        "proprietary": false,
+        "creationTime": "2024-07-07T07:05:51.503381Z",
+        "functions_new": [],
+        "alternativeIds": [],
+        "disclosureTime": "2024-07-05T20:06:40Z",
+        "exploitDetails": {
+          "sources": [],
+          "maturityLevels": [
+            {
+              "type": "secondary",
+              "level": "Not Defined",
+              "format": "CVSSv3"
+            },
+            {
+              "type": "primary",
+              "level": "Not Defined",
+              "format": "CVSSv4"
+            }
+          ]
+        },
+        "packageManager": "pip",
+        "publicationTime": "2024-07-07T07:05:51.759398Z",
+        "severityBasedOn": "CVSS",
+        "modificationTime": "2024-07-07T07:05:51.879707Z",
+        "socialTrendAlert": false,
+        "packagePopularityRank": 99,
+        "from": [
+          "app@0.1.0",
+          "emails@0.6",
+          "premailer@3.10.0",
+          "requests@2.32.3",
+          "certifi@2024.2.2"
+        ],
+        "upgradePath": [],
+        "isUpgradable": false,
+        "isPatchable": false,
+        "isPinnable": true,
+        "isRuntime": false,
+        "name": "certifi",
+        "version": "2024.2.2",
+        "severityWithCritical": "medium"
+      },
+      {
+        "id": "SNYK-PYTHON-STARLETTE-8186175",
+        "title": "Allocation of Resources Without Limits or Throttling",
+        "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:P",
+        "credit": [
+          "Marcel Hellkamp"
+        ],
+        "semver": {
+          "vulnerable": [
+            "[,0.40.0)"
+          ]
+        },
+        "exploit": "Proof of Concept",
+        "fixedIn": [
+          "0.40.0"
+        ],
+        "patches": [],
+        "insights": {
+          "triageAdvice": null
+        },
+        "language": "python",
+        "severity": "high",
+        "cvssScore": 8.7,
+        "functions": [],
+        "malicious": false,
+        "isDisputed": false,
+        "moduleName": "starlette",
+        "references": [
+          {
+            "url": "https://github.com/encode/starlette/commit/fd038f3070c302bff17ef7d173dbb0b007617733",
+            "title": "GitHub Commit"
+          },
+          {
+            "url": "https://github.com/encode/starlette/releases/tag/0.40.0",
+            "title": "GitHub Release"
+          }
+        ],
+        "cvssDetails": [],
+        "cvssSources": [
+          {
+            "type": "primary",
+            "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:P",
+            "assigner": "Snyk",
+            "severity": "high",
+            "baseScore": 8.7,
+            "cvssVersion": "4.0",
+            "modificationTime": "2024-10-15T14:46:17.033387Z"
+          },
+          {
+            "type": "secondary",
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:P",
+            "assigner": "Snyk",
+            "severity": "high",
+            "baseScore": 7.5,
+            "cvssVersion": "3.1",
+            "modificationTime": "2024-10-15T14:46:17.033387Z"
+          }
+        ],
+        "description": "## Overview\n[starlette](https://www.pypi.org/project/starlette) is a The little ASGI library that shines.\n\nAffected versions of this package are vulnerable to Allocation of Resources Without Limits or Throttling via `multipart/form-data` requests, due to treating parts without a `filename` as text form fields and buffering those in byte strings with no size limit. \r\n\r\nAn attacker could cause `Starlette` to both slow down significantly due to excessive memory allocations and copy operations, and also consume more and more memory until the server starts swapping and grinds to a halt by uploading arbitrary large form fields.\r\n\r\n**Note:**\r\n\r\nThis vulnerability affects all applications built with `Starlette` (or `FastAPI`) accepting form requests.\n## PoC\n```\r\nfrom starlette.applications import Starlette\r\nfrom starlette.routing import Route\r\n\r\nasync def poc(request):\r\n    async with request.form():\r\n        pass\r\n\r\napp = Starlette(routes=[\r\n    Route('/', poc, methods=[\"POST\"]),\r\n])\r\n```\r\n\r\n```\r\ncurl http://localhost:8000 -F 'big=</dev/urandom'\r\n```\n## Remediation\nUpgrade `starlette` to version 0.40.0 or higher.\n## References\n- [GitHub Commit](https://github.com/encode/starlette/commit/fd038f3070c302bff17ef7d173dbb0b007617733)\n- [GitHub Release](https://github.com/encode/starlette/releases/tag/0.40.0)\n",
+        "epssDetails": {
+          "percentile": "0.10007",
+          "probability": "0.00043",
+          "modelVersion": "v2023.03.01"
+        },
+        "identifiers": {
+          "CVE": [
+            "CVE-2024-47874"
+          ],
+          "CWE": [
+            "CWE-770"
+          ],
+          "GHSA": [
+            "GHSA-f96h-pmfr-66vw"
+          ]
+        },
+        "packageName": "starlette",
+        "proprietary": false,
+        "creationTime": "2024-10-15T10:32:26.227268Z",
+        "functions_new": [],
+        "alternativeIds": [],
+        "disclosureTime": "2024-10-15T06:49:52Z",
+        "exploitDetails": {
+          "sources": [
+            "Snyk"
+          ],
+          "maturityLevels": [
+            {
+              "type": "secondary",
+              "level": "Proof of Concept",
+              "format": "CVSSv3"
+            },
+            {
+              "type": "primary",
+              "level": "Proof of Concept",
+              "format": "CVSSv4"
+            }
+          ]
+        },
+        "packageManager": "pip",
+        "publicationTime": "2024-10-15T14:46:17.016352Z",
+        "severityBasedOn": "CVSS",
+        "modificationTime": "2024-10-15T14:46:17.033387Z",
+        "socialTrendAlert": false,
+        "packagePopularityRank": 99,
+        "from": [
+          "app@0.1.0",
+          "sentry-sdk@1.41.0",
+          "fastapi@0.109.2",
+          "starlette@0.36.3"
+        ],
+        "upgradePath": [
+          false,
+          "sentry-sdk@1.41.0"
+        ],
+        "isUpgradable": true,
+        "isPatchable": false,
+        "isPinnable": true,
+        "isRuntime": false,
+        "name": "starlette",
+        "version": "0.36.3",
+        "severityWithCritical": "high"
+      },
+      {
+        "id": "SNYK-PYTHON-URLLIB3-7267250",
+        "title": "Improper Removal of Sensitive Information Before Storage or Transfer",
+        "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+        "credit": [
+          "Unknown"
+        ],
+        "semver": {
+          "vulnerable": [
+            "[,1.26.19)",
+            "[2.0.0a1, 2.2.2)"
+          ]
+        },
+        "exploit": "Not Defined",
+        "fixedIn": [
+          "1.26.19",
+          "2.2.2"
+        ],
+        "patches": [],
+        "insights": {
+          "triageAdvice": null
+        },
+        "language": "python",
+        "severity": "medium",
+        "cvssScore": 6,
+        "functions": [],
+        "malicious": false,
+        "isDisputed": false,
+        "moduleName": "urllib3",
+        "references": [
+          {
+            "url": "https://github.com/urllib3/urllib3/commit/40b6d1605814dd1db0a46e202d6e56f2e4c9a468",
+            "title": "GitHub Commit"
+          },
+          {
+            "url": "https://github.com/urllib3/urllib3/commit/accff72ecc2f6cf5a76d9570198a93ac7c90270e",
+            "title": "GitHub Commit"
+          }
+        ],
+        "cvssDetails": [
+          {
+            "assigner": "Red Hat",
+            "severity": "medium",
+            "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+            "cvssV3BaseScore": 4.4,
+            "modificationTime": "2024-06-19T13:35:21.960816Z"
+          },
+          {
+            "assigner": "SUSE",
+            "severity": "medium",
+            "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+            "cvssV3BaseScore": 4.4,
+            "modificationTime": "2024-07-10T05:27:00.951176Z"
+          }
+        ],
+        "cvssSources": [
+          {
+            "type": "primary",
+            "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:H/VI:N/VA:N/SC:L/SI:N/SA:N",
+            "assigner": "Snyk",
+            "severity": "medium",
+            "baseScore": 6,
+            "cvssVersion": "4.0",
+            "modificationTime": "2024-06-18T08:23:45.878215Z"
+          },
+          {
+            "type": "secondary",
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+            "assigner": "Snyk",
+            "severity": "medium",
+            "baseScore": 5.3,
+            "cvssVersion": "3.1",
+            "modificationTime": "2024-06-18T08:23:45.878215Z"
+          },
+          {
+            "type": "secondary",
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+            "assigner": "Red Hat",
+            "severity": "medium",
+            "baseScore": 4.4,
+            "cvssVersion": "3.1",
+            "modificationTime": "2024-06-19T13:35:21.960816Z"
+          },
+          {
+            "type": "secondary",
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+            "assigner": "SUSE",
+            "severity": "medium",
+            "baseScore": 4.4,
+            "cvssVersion": "3.1",
+            "modificationTime": "2024-07-10T05:27:00.951176Z"
+          }
+        ],
+        "description": "## Overview\n[urllib3](https://pypi.org/project/urllib3/) is a HTTP library with thread-safe connection pooling, file post, and more.\n\nAffected versions of this package are vulnerable to Improper Removal of Sensitive Information Before Storage or Transfer due to the improper handling of the `Proxy-Authorization` header during cross-origin redirects when `ProxyManager` is not in use. When the conditions below are met, including non-recommended configurations, the contents of this header can be sent in an automatic HTTP redirect.\r\n\r\n**Notes:**\r\n\r\nTo be vulnerable, the application must be doing all of the following:\r\n\r\n1) Setting the `Proxy-Authorization` header without using urllib3's built-in proxy support.\r\n\r\n2) Not disabling HTTP redirects (e.g. with `redirects=False`)\r\n\r\n3) Either not using an HTTPS origin server, or having a proxy or target origin that redirects to a malicious origin.\r\n\r\n## Workarounds\r\n\r\n1) Using the `Proxy-Authorization` header with urllib3's `ProxyManager`.\r\n\r\n2) Disabling HTTP redirects using `redirects=False` when sending requests.\r\n\r\n3) Not using the `Proxy-Authorization` header.\n## Remediation\nUpgrade `urllib3` to version 1.26.19, 2.2.2 or higher.\n## References\n- [GitHub Commit](https://github.com/urllib3/urllib3/commit/40b6d1605814dd1db0a46e202d6e56f2e4c9a468)\n- [GitHub Commit](https://github.com/urllib3/urllib3/commit/accff72ecc2f6cf5a76d9570198a93ac7c90270e)\n",
+        "epssDetails": {
+          "percentile": "0.10007",
+          "probability": "0.00043",
+          "modelVersion": "v2023.03.01"
+        },
+        "identifiers": {
+          "CVE": [
+            "CVE-2024-37891"
+          ],
+          "CWE": [
+            "CWE-212"
+          ],
+          "GHSA": [
+            "GHSA-34jh-p97f-mpxf"
+          ]
+        },
+        "packageName": "urllib3",
+        "proprietary": false,
+        "creationTime": "2024-06-18T07:00:05.360687Z",
+        "functions_new": [],
+        "alternativeIds": [],
+        "disclosureTime": "2024-06-17T21:37:20Z",
+        "exploitDetails": {
+          "sources": [],
+          "maturityLevels": [
+            {
+              "type": "secondary",
+              "level": "Not Defined",
+              "format": "CVSSv3"
+            },
+            {
+              "type": "primary",
+              "level": "Not Defined",
+              "format": "CVSSv4"
+            }
+          ]
+        },
+        "packageManager": "pip",
+        "publicationTime": "2024-06-18T08:23:45.877974Z",
+        "severityBasedOn": "CVSS",
+        "modificationTime": "2024-07-10T05:27:00.951176Z",
+        "socialTrendAlert": false,
+        "packagePopularityRank": 100,
+        "from": [
+          "app@0.1.0",
+          "emails@0.6",
+          "premailer@3.10.0",
+          "requests@2.32.3",
+          "urllib3@2.2.1"
+        ],
+        "upgradePath": [],
+        "isUpgradable": false,
+        "isPatchable": false,
+        "isPinnable": true,
+        "isRuntime": false,
+        "name": "urllib3",
+        "version": "2.2.1",
+        "severityWithCritical": "medium"
+      }
+    ],
+    "upgrade": {
+      "sentry-sdk@1.41.0": {
+        "upgradeTo": "sentry-sdk@2.8.0",
+        "upgrades": [
+          "sentry-sdk@1.41.0"
+        ],
+        "vulns": [
+          "SNYK-PYTHON-SENTRYSDK-7541801"
+        ]
+      }
+    },
+    "patch": {},
+    "ignore": {},
+    "pin": {
+      "anyio@4.3.0": {
+        "upgradeTo": "anyio@4.4.0",
+        "vulns": [
+          "SNYK-PYTHON-ANYIO-7361842"
+        ],
+        "isTransitive": true
+      },
+      "certifi@2024.2.2": {
+        "upgradeTo": "certifi@2024.7.4",
+        "vulns": [
+          "SNYK-PYTHON-CERTIFI-7430173"
+        ],
+        "isTransitive": true
+      },
+      "sentry-sdk@1.41.0": {
+        "upgradeTo": "sentry-sdk@2.8.0",
+        "vulns": [
+          "SNYK-PYTHON-SENTRYSDK-7541801"
+        ],
+        "isTransitive": false
+      },
+      "starlette@0.36.3": {
+        "upgradeTo": "starlette@0.40.0",
+        "vulns": [
+          "SNYK-PYTHON-STARLETTE-8186175"
+        ],
+        "isTransitive": true
+      },
+      "urllib3@2.2.1": {
+        "upgradeTo": "urllib3@2.2.2",
+        "vulns": [
+          "SNYK-PYTHON-URLLIB3-7267250"
+        ],
+        "isTransitive": true
+      }
+    }
+  },
+  "filesystemPolicy": false,
+  "filtered": {
+    "ignore": [],
+    "patch": []
+  },
+  "uniqueCount": 5,
+  "targetFile": "pyproject.toml",
+  "projectName": "app",
+  "displayTargetFile": "pyproject.toml",
+  "path": "/home/chukwudi/devops/challenge1/backend"
+}

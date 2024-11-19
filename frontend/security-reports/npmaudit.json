@@ -1,0 +1,528 @@
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {
+    "axios": {
+      "name": "axios",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        {
+          "source": 1098583,
+          "name": "axios",
+          "dependency": "axios",
+          "title": "Server-Side Request Forgery in axios",
+          "url": "https://github.com/advisories/GHSA-8hc4-vh64-cxmj",
+          "severity": "high",
+          "cwe": [
+            "CWE-918"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": ">=1.3.2 <=1.7.3"
+        }
+      ],
+      "effects": [],
+      "range": "1.3.2 - 1.7.3",
+      "nodes": [
+        "node_modules/axios"
+      ],
+      "fixAvailable": {
+        "name": "axios",
+        "version": "1.7.7",
+        "isSemVerMajor": false
+      }
+    },
+    "debug": {
+      "name": "debug",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1094457,
+          "name": "debug",
+          "dependency": "debug",
+          "title": "debug Inefficient Regular Expression Complexity vulnerability",
+          "url": "https://github.com/advisories/GHSA-9vvw-cc9w-f27h",
+          "severity": "high",
+          "cwe": [
+            "CWE-1333"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<2.6.9"
+        },
+        {
+          "source": 1096795,
+          "name": "debug",
+          "dependency": "debug",
+          "title": "Regular Expression Denial of Service in debug",
+          "url": "https://github.com/advisories/GHSA-gxpj-cx7g-858c",
+          "severity": "low",
+          "cwe": [
+            "CWE-400"
+          ],
+          "cvss": {
+            "score": 3.7,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": "<2.6.9"
+        }
+      ],
+      "effects": [
+        "engine.io",
+        "engine.io-client"
+      ],
+      "range": "<=2.6.8",
+      "nodes": [
+        "node_modules/debug",
+        "node_modules/engine.io-client/node_modules/debug"
+      ],
+      "fixAvailable": true
+    },
+    "engine.io": {
+      "name": "engine.io",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1089484,
+          "name": "engine.io",
+          "dependency": "engine.io",
+          "title": "Resource exhaustion in engine.io",
+          "url": "https://github.com/advisories/GHSA-j4f2-536g-r55m",
+          "severity": "high",
+          "cwe": [
+            "CWE-400"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<3.6.0"
+        },
+        {
+          "source": 1089526,
+          "name": "engine.io",
+          "dependency": "engine.io",
+          "title": "Uncaught exception in engine.io",
+          "url": "https://github.com/advisories/GHSA-r7qp-cfhv-p84w",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-248"
+          ],
+          "cvss": {
+            "score": 6.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<3.6.1"
+        },
+        "debug",
+        "ws"
+      ],
+      "effects": [
+        "engine.io-stream"
+      ],
+      "range": "<=3.6.0",
+      "nodes": [
+        "node_modules/engine.io"
+      ],
+      "fixAvailable": true
+    },
+    "engine.io-client": {
+      "name": "engine.io-client",
+      "severity": "critical",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1093509,
+          "name": "engine.io-client",
+          "dependency": "engine.io-client",
+          "title": "Insecure Defaults Allow MITM Over TLS in engine.io-client",
+          "url": "https://github.com/advisories/GHSA-4r4m-hjwj-43p8",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-300"
+          ],
+          "cvss": {
+            "score": 5.9,
+            "vectorString": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+          },
+          "range": "<1.6.9"
+        },
+        "debug",
+        "ws",
+        "xmlhttprequest"
+      ],
+      "effects": [],
+      "range": "<=3.1.0",
+      "nodes": [
+        "node_modules/engine.io-client"
+      ],
+      "fixAvailable": true
+    },
+    "engine.io-stream": {
+      "name": "engine.io-stream",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "engine.io",
+        "engine.io-client"
+      ],
+      "effects": [
+        "reconnect"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/engine.io-stream"
+      ],
+      "fixAvailable": true
+    },
+    "node-uuid": {
+      "name": "node-uuid",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1090841,
+          "name": "node-uuid",
+          "dependency": "node-uuid",
+          "title": "Insecure Entropy Source - Math.random() in node-uuid",
+          "url": "https://github.com/advisories/GHSA-265q-28rp-chq5",
+          "severity": "high",
+          "cwe": [
+            "CWE-331"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+          },
+          "range": "<1.4.4"
+        }
+      ],
+      "effects": [
+        "sockjs"
+      ],
+      "range": "<1.4.4",
+      "nodes": [
+        "node_modules/sockjs/node_modules/node-uuid"
+      ],
+      "fixAvailable": true
+    },
+    "reconnect": {
+      "name": "reconnect",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "engine.io-stream",
+        "request"
+      ],
+      "effects": [],
+      "range": ">=0.4.0",
+      "nodes": [
+        "node_modules/reconnect"
+      ],
+      "fixAvailable": true
+    },
+    "request": {
+      "name": "request",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1096727,
+          "name": "request",
+          "dependency": "request",
+          "title": "Server-Side Request Forgery in Request",
+          "url": "https://github.com/advisories/GHSA-p8p7-x288-28g6",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-918"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<=2.88.2"
+        },
+        "tough-cookie"
+      ],
+      "effects": [
+        "reconnect"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/request"
+      ],
+      "fixAvailable": true
+    },
+    "rollup": {
+      "name": "rollup",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1099764,
+          "name": "rollup",
+          "dependency": "rollup",
+          "title": "DOM Clobbering Gadget found in rollup bundled scripts that leads to XSS",
+          "url": "https://github.com/advisories/GHSA-gcx4-mw62-g8wm",
+          "severity": "high",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 6.4,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:H"
+          },
+          "range": ">=4.0.0 <4.22.4"
+        }
+      ],
+      "effects": [],
+      "range": "4.0.0 - 4.22.3",
+      "nodes": [
+        "node_modules/rollup"
+      ],
+      "fixAvailable": true
+    },
+    "shoe": {
+      "name": "shoe",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "sockjs"
+      ],
+      "effects": [],
+      "range": ">=0.0.10",
+      "nodes": [
+        "node_modules/shoe"
+      ],
+      "fixAvailable": true
+    },
+    "sockjs": {
+      "name": "sockjs",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1089877,
+          "name": "sockjs",
+          "dependency": "sockjs",
+          "title": "Improper Input Validation in SocksJS-Node",
+          "url": "https://github.com/advisories/GHSA-c9g6-9335-x697",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-20"
+          ],
+          "cvss": {
+            "score": 5.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": "<0.3.20"
+        },
+        "node-uuid"
+      ],
+      "effects": [
+        "shoe"
+      ],
+      "range": "<=0.3.19",
+      "nodes": [
+        "node_modules/sockjs"
+      ],
+      "fixAvailable": true
+    },
+    "tough-cookie": {
+      "name": "tough-cookie",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1097682,
+          "name": "tough-cookie",
+          "dependency": "tough-cookie",
+          "title": "tough-cookie Prototype Pollution vulnerability",
+          "url": "https://github.com/advisories/GHSA-72xf-g2v4-qvf3",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-1321"
+          ],
+          "cvss": {
+            "score": 6.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+          },
+          "range": "<4.1.3"
+        }
+      ],
+      "effects": [
+        "request"
+      ],
+      "range": "<4.1.3",
+      "nodes": [
+        "node_modules/tough-cookie"
+      ],
+      "fixAvailable": true
+    },
+    "vite": {
+      "name": "vite",
+      "severity": "moderate",
+      "isDirect": true,
+      "via": [
+        {
+          "source": 1099687,
+          "name": "vite",
+          "dependency": "vite",
+          "title": "Vite's `server.fs.deny` is bypassed when using `?import&raw`",
+          "url": "https://github.com/advisories/GHSA-9cwx-2883-4wfx",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-200",
+            "CWE-284"
+          ],
+          "cvss": {
+            "score": 5.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+          },
+          "range": ">=5.0.0 <=5.1.7"
+        },
+        {
+          "source": 1099689,
+          "name": "vite",
+          "dependency": "vite",
+          "title": "Vite DOM Clobbering gadget found in vite bundled scripts that leads to XSS",
+          "url": "https://github.com/advisories/GHSA-64vr-g452-qvp3",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 6.4,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:H"
+          },
+          "range": ">=5.0.0 <5.1.8"
+        }
+      ],
+      "effects": [],
+      "range": "5.0.0 - 5.1.7",
+      "nodes": [
+        "node_modules/vite"
+      ],
+      "fixAvailable": true
+    },
+    "ws": {
+      "name": "ws",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1090891,
+          "name": "ws",
+          "dependency": "ws",
+          "title": "DoS due to excessively large websocket message in ws",
+          "url": "https://github.com/advisories/GHSA-6663-c963-2gqg",
+          "severity": "high",
+          "cwe": [
+            "CWE-400"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<1.1.1"
+        },
+        {
+          "source": 1091478,
+          "name": "ws",
+          "dependency": "ws",
+          "title": "Denial of Service in ws",
+          "url": "https://github.com/advisories/GHSA-5v72-xg48-5rpm",
+          "severity": "high",
+          "cwe": [
+            "CWE-400"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": ">=0.2.6 <1.1.5"
+        },
+        {
+          "source": 1093982,
+          "name": "ws",
+          "dependency": "ws",
+          "title": "Remote Memory Disclosure in ws",
+          "url": "https://github.com/advisories/GHSA-2mhh-w6q8-5hxw",
+          "severity": "low",
+          "cwe": [
+            "CWE-201"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<1.0.1"
+        }
+      ],
+      "effects": [
+        "engine.io",
+        "engine.io-client"
+      ],
+      "range": "<=1.1.4",
+      "nodes": [
+        "node_modules/ws"
+      ],
+      "fixAvailable": true
+    },
+    "xmlhttprequest": {
+      "name": "xmlhttprequest",
+      "severity": "critical",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1095089,
+          "name": "xmlhttprequest",
+          "dependency": "xmlhttprequest",
+          "title": "xmlhttprequest and xmlhttprequest-ssl vulnerable to Arbitrary Code Injection",
+          "url": "https://github.com/advisories/GHSA-h4j5-c7cj-74xg",
+          "severity": "critical",
+          "cwe": [
+            "CWE-94"
+          ],
+          "cvss": {
+            "score": 9.8,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+          },
+          "range": "<1.7.0"
+        }
+      ],
+      "effects": [
+        "engine.io-client"
+      ],
+      "range": "<1.7.0",
+      "nodes": [
+        "node_modules/xmlhttprequest"
+      ],
+      "fixAvailable": true
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 4,
+      "high": 9,
+      "critical": 2,
+      "total": 15
+    },
+    "dependencies": {
+      "prod": 287,
+      "dev": 90,
+      "optional": 59,
+      "peer": 0,
+      "peerOptional": 0,
+      "total": 382
+    }
+  }
+}

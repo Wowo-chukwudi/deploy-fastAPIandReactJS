@@ -1,0 +1,2495 @@
+{
+  "results": [
+    {
+      "source": {
+        "path": "/home/chukwudi/devops/challenge1/frontend/package-lock.json",
+        "type": "lockfile"
+      },
+      "packages": [
+        {
+          "package": {
+            "name": "axios",
+            "version": "1.6.2",
+            "ecosystem": "npm",
+            "commit": ""
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-08-13T19:53:23Z",
+              "published": "2024-08-12T15:30:49Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-8hc4-vh64-cxmj",
+              "aliases": [
+                "CVE-2024-39338"
+              ],
+              "related": [
+                "CGA-58f9-jc24-h5ch",
+                "CGA-8mxr-gwwc-5gvh",
+                "CGA-9ph2-9r6m-2j4q",
+                "CGA-cvr7-x2g5-2f3j",
+                "CGA-rhv9-vcr9-v8hr"
+              ],
+              "summary": "Server-Side Request Forgery in axios",
+              "details": "axios 1.7.2 allows SSRF via unexpected behavior where requests for path relative URLs get processed as protocol relative URLs.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "axios",
+                    "purl": "pkg:npm/axios"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "1.3.2"
+                        },
+                        {
+                          "fixed": "1.7.4"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "last_known_affected_version_range": "\u003c= 1.7.3",
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/08/GHSA-8hc4-vh64-cxmj/GHSA-8hc4-vh64-cxmj.json"
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-39338"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/axios/axios/issues/6463"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/axios/axios/pull/6539"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/axios/axios/pull/6543"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/axios/axios/commit/6b6b605eaf73852fb2dae033f1e786155959de3a"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/axios/axios"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/axios/axios/releases"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/axios/axios/releases/tag/v1.7.4"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://jeffhacks.com/advisories/2024/06/24/CVE-2024-39338.html"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-918"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-08-12T17:26:43Z",
+                "nvd_published_at": "2024-08-12T13:38:24Z",
+                "severity": "HIGH"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-8hc4-vh64-cxmj"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "debug",
+            "version": "0.6.0",
+            "ecosystem": "npm",
+            "commit": ""
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2023-11-08T03:59:17Z",
+              "published": "2023-01-09T12:30:19Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-9vvw-cc9w-f27h",
+              "aliases": [
+                "CVE-2017-20165"
+              ],
+              "summary": "debug Inefficient Regular Expression Complexity vulnerability",
+              "details": "A vulnerability classified as problematic has been found in debug-js debug up to 3.0.x. This affects the function useColors of the file src/node.js. The manipulation of the argument str leads to inefficient regular expression complexity. Upgrading to version 3.1.0 is able to address this issue. The name of the patch is c38a0166c266a679c8de012d4eaccec3f944e685. It is recommended to upgrade the affected component. The identifier VDB-217665 was assigned to this vulnerability. The patch has been backported to the 2.6.x branch in version 2.6.9.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "debug",
+                    "purl": "pkg:npm/debug"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "3.0.0"
+                        },
+                        {
+                          "fixed": "3.1.0"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2023/01/GHSA-9vvw-cc9w-f27h/GHSA-9vvw-cc9w-f27h.json"
+                  },
+                  "ecosystem_specific": {
+                    "affected_functions": [
+                      "(debug).formatters.o"
+                    ]
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "debug",
+                    "purl": "pkg:npm/debug"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "2.6.9"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2023/01/GHSA-9vvw-cc9w-f27h/GHSA-9vvw-cc9w-f27h.json"
+                  },
+                  "ecosystem_specific": {
+                    "affected_functions": [
+                      "(debug).formatters.o"
+                    ]
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-20165"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/debug-js/debug/pull/504"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/debug-js/debug/commit/c38a0166c266a679c8de012d4eaccec3f944e685"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/debug-js/debug/commit/f53962e944a87e6ca9bb622a2a12dffc22a9bb5a"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/debug-js/debug"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/debug-js/debug/releases/tag/2.6.9"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/debug-js/debug/releases/tag/3.1.0"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://vuldb.com/?ctiid.217665"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://vuldb.com/?id.217665"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-1333"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2023-01-10T21:49:01Z",
+                "nvd_published_at": "2023-01-09T10:15:00Z",
+                "severity": "HIGH"
+              }
+            },
+            {
+              "modified": "2024-03-25T19:01:23Z",
+              "published": "2018-08-09T20:18:07Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-gxpj-cx7g-858c",
+              "aliases": [
+                "CVE-2017-16137"
+              ],
+              "summary": "Regular Expression Denial of Service in debug",
+              "details": "Affected versions of `debug` are vulnerable to regular expression denial of service when untrusted user input is passed into the `o` formatter. \n\nAs it takes 50,000 characters to block the event loop for 2 seconds, this issue is a low severity issue.\n\nThis was later re-introduced in version v3.2.0, and then repatched in versions 3.2.7 and 4.3.1.\n\n## Recommendation\n\nVersion 2.x.x: Update to version 2.6.9 or later.\nVersion 3.1.x: Update to version 3.1.0 or later.\nVersion 3.2.x: Update to version 3.2.7 or later.\nVersion 4.x.x: Update to version 4.3.1 or later.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "debug",
+                    "purl": "pkg:npm/debug"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "2.6.9"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2018/08/GHSA-gxpj-cx7g-858c/GHSA-gxpj-cx7g-858c.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "debug",
+                    "purl": "pkg:npm/debug"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "3.0.0"
+                        },
+                        {
+                          "fixed": "3.1.0"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2018/08/GHSA-gxpj-cx7g-858c/GHSA-gxpj-cx7g-858c.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "debug",
+                    "purl": "pkg:npm/debug"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "3.2.0"
+                        },
+                        {
+                          "fixed": "3.2.7"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2018/08/GHSA-gxpj-cx7g-858c/GHSA-gxpj-cx7g-858c.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "debug",
+                    "purl": "pkg:npm/debug"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "4.0.0"
+                        },
+                        {
+                          "fixed": "4.3.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2018/08/GHSA-gxpj-cx7g-858c/GHSA-gxpj-cx7g-858c.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-16137"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/debug-js/debug/issues/797"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/visionmedia/debug/issues/501"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/visionmedia/debug/pull/504"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/debug-js/debug/commit/4e2150207c568adb9ead8f4c4528016081c88020"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/debug-js/debug/commit/71169065b5262f9858ac78cc0b688c84a438f290"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/debug-js/debug/commit/b6d12fdbc63b483e5c969da33ea6adc09946b5ac"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/debug-js/debug/commit/f53962e944a87e6ca9bb622a2a12dffc22a9bb5a"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/visionmedia/debug"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.apache.org/thread.html/r8ba4c628fba7181af58817d452119481adce4ba92e889c643e4c7dd3@%3Ccommits.netbeans.apache.org%3E"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.apache.org/thread.html/rb5ac16fad337d1f3bb7079549f97d8166d0ef3082629417c39f12d63@%3Cnotifications.netbeans.apache.org%3E"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-400"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2020-06-16T21:38:18Z",
+                "nvd_published_at": null,
+                "severity": "LOW"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-9vvw-cc9w-f27h"
+              ]
+            },
+            {
+              "ids": [
+                "GHSA-gxpj-cx7g-858c"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "debug",
+            "version": "0.7.2",
+            "ecosystem": "npm",
+            "commit": ""
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2023-11-08T03:59:17Z",
+              "published": "2023-01-09T12:30:19Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-9vvw-cc9w-f27h",
+              "aliases": [
+                "CVE-2017-20165"
+              ],
+              "summary": "debug Inefficient Regular Expression Complexity vulnerability",
+              "details": "A vulnerability classified as problematic has been found in debug-js debug up to 3.0.x. This affects the function useColors of the file src/node.js. The manipulation of the argument str leads to inefficient regular expression complexity. Upgrading to version 3.1.0 is able to address this issue. The name of the patch is c38a0166c266a679c8de012d4eaccec3f944e685. It is recommended to upgrade the affected component. The identifier VDB-217665 was assigned to this vulnerability. The patch has been backported to the 2.6.x branch in version 2.6.9.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "debug",
+                    "purl": "pkg:npm/debug"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "3.0.0"
+                        },
+                        {
+                          "fixed": "3.1.0"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2023/01/GHSA-9vvw-cc9w-f27h/GHSA-9vvw-cc9w-f27h.json"
+                  },
+                  "ecosystem_specific": {
+                    "affected_functions": [
+                      "(debug).formatters.o"
+                    ]
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "debug",
+                    "purl": "pkg:npm/debug"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "2.6.9"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2023/01/GHSA-9vvw-cc9w-f27h/GHSA-9vvw-cc9w-f27h.json"
+                  },
+                  "ecosystem_specific": {
+                    "affected_functions": [
+                      "(debug).formatters.o"
+                    ]
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-20165"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/debug-js/debug/pull/504"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/debug-js/debug/commit/c38a0166c266a679c8de012d4eaccec3f944e685"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/debug-js/debug/commit/f53962e944a87e6ca9bb622a2a12dffc22a9bb5a"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/debug-js/debug"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/debug-js/debug/releases/tag/2.6.9"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/debug-js/debug/releases/tag/3.1.0"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://vuldb.com/?ctiid.217665"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://vuldb.com/?id.217665"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-1333"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2023-01-10T21:49:01Z",
+                "nvd_published_at": "2023-01-09T10:15:00Z",
+                "severity": "HIGH"
+              }
+            },
+            {
+              "modified": "2024-03-25T19:01:23Z",
+              "published": "2018-08-09T20:18:07Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-gxpj-cx7g-858c",
+              "aliases": [
+                "CVE-2017-16137"
+              ],
+              "summary": "Regular Expression Denial of Service in debug",
+              "details": "Affected versions of `debug` are vulnerable to regular expression denial of service when untrusted user input is passed into the `o` formatter. \n\nAs it takes 50,000 characters to block the event loop for 2 seconds, this issue is a low severity issue.\n\nThis was later re-introduced in version v3.2.0, and then repatched in versions 3.2.7 and 4.3.1.\n\n## Recommendation\n\nVersion 2.x.x: Update to version 2.6.9 or later.\nVersion 3.1.x: Update to version 3.1.0 or later.\nVersion 3.2.x: Update to version 3.2.7 or later.\nVersion 4.x.x: Update to version 4.3.1 or later.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "debug",
+                    "purl": "pkg:npm/debug"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "2.6.9"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2018/08/GHSA-gxpj-cx7g-858c/GHSA-gxpj-cx7g-858c.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "debug",
+                    "purl": "pkg:npm/debug"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "3.0.0"
+                        },
+                        {
+                          "fixed": "3.1.0"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2018/08/GHSA-gxpj-cx7g-858c/GHSA-gxpj-cx7g-858c.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "debug",
+                    "purl": "pkg:npm/debug"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "3.2.0"
+                        },
+                        {
+                          "fixed": "3.2.7"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2018/08/GHSA-gxpj-cx7g-858c/GHSA-gxpj-cx7g-858c.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "debug",
+                    "purl": "pkg:npm/debug"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "4.0.0"
+                        },
+                        {
+                          "fixed": "4.3.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2018/08/GHSA-gxpj-cx7g-858c/GHSA-gxpj-cx7g-858c.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-16137"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/debug-js/debug/issues/797"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/visionmedia/debug/issues/501"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/visionmedia/debug/pull/504"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/debug-js/debug/commit/4e2150207c568adb9ead8f4c4528016081c88020"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/debug-js/debug/commit/71169065b5262f9858ac78cc0b688c84a438f290"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/debug-js/debug/commit/b6d12fdbc63b483e5c969da33ea6adc09946b5ac"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/debug-js/debug/commit/f53962e944a87e6ca9bb622a2a12dffc22a9bb5a"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/visionmedia/debug"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.apache.org/thread.html/r8ba4c628fba7181af58817d452119481adce4ba92e889c643e4c7dd3@%3Ccommits.netbeans.apache.org%3E"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.apache.org/thread.html/rb5ac16fad337d1f3bb7079549f97d8166d0ef3082629417c39f12d63@%3Cnotifications.netbeans.apache.org%3E"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-400"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2020-06-16T21:38:18Z",
+                "nvd_published_at": null,
+                "severity": "LOW"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-9vvw-cc9w-f27h"
+              ]
+            },
+            {
+              "ids": [
+                "GHSA-gxpj-cx7g-858c"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "engine.io",
+            "version": "0.7.12",
+            "ecosystem": "npm",
+            "commit": ""
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2023-11-08T04:03:40Z",
+              "published": "2022-02-09T22:29:04Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-j4f2-536g-r55m",
+              "aliases": [
+                "CVE-2020-36048"
+              ],
+              "summary": "Resource exhaustion in engine.io",
+              "details": "Engine.IO before 4.0.0 and 3.6.0 allows attackers to cause a denial of service (resource consumption) via a POST request to the long polling transport.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "engine.io",
+                    "purl": "pkg:npm/engine.io"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "3.6.0"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/02/GHSA-j4f2-536g-r55m/GHSA-j4f2-536g-r55m.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-36048"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/socketio/engine.io/commit/734f9d1268840722c41219e69eb58318e0b2ac6b"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://blog.caller.xyz/socketio-engineio-dos"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/bcaller/kill-engine-io"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/socketio/engine.io"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-400"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2021-04-06T22:58:33Z",
+                "nvd_published_at": "2021-01-08T00:15:00Z",
+                "severity": "HIGH"
+              }
+            },
+            {
+              "modified": "2023-11-08T04:10:36Z",
+              "published": "2022-11-21T23:55:41Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-r7qp-cfhv-p84w",
+              "aliases": [
+                "CVE-2022-41940"
+              ],
+              "summary": "Uncaught exception in engine.io",
+              "details": "### Impact\n\nA specially crafted HTTP request can trigger an uncaught exception on the Engine.IO server, thus killing the Node.js process.\n\n```\nevents.js:292\n      throw er; // Unhandled 'error' event\n      ^\n\nError: read ECONNRESET\n    at TCP.onStreamRead (internal/stream_base_commons.js:209:20)\nEmitted 'error' event on Socket instance at:\n    at emitErrorNT (internal/streams/destroy.js:106:8)\n    at emitErrorCloseNT (internal/streams/destroy.js:74:3)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21) {\n  errno: -104,\n  code: 'ECONNRESET',\n  syscall: 'read'\n}\n```\n\nThis impacts all the users of the [`engine.io`](https://www.npmjs.com/package/engine.io) package, including those who uses depending packages like [`socket.io`](https://www.npmjs.com/package/socket.io).\n\n### Patches\n\nA fix has been released today (2022/11/20):\n\n| Version range     | Fixed version |\n|-------------------|---------------|\n| `engine.io@3.x.y` | `3.6.1`       |\n| `engine.io@6.x.y` | `6.2.1`       |\n\nFor `socket.io` users:\n\n| Version range               | `engine.io` version | Needs minor update?                                                                                    |\n|-----------------------------|---------------------|--------------------------------------------------------------------------------------------------------|\n| `socket.io@4.5.x`           | `~6.2.0`            | `npm audit fix` should be sufficient                                                                   |\n| `socket.io@4.4.x`           | `~6.1.0`            | Please upgrade to `socket.io@4.5.x`                                                                    |\n| `socket.io@4.3.x`           | `~6.0.0`            | Please upgrade to `socket.io@4.5.x`                                                                    |\n| `socket.io@4.2.x`           | `~5.2.0`            | Please upgrade to `socket.io@4.5.x`                                                                    |\n| `socket.io@4.1.x`           | `~5.1.1`            | Please upgrade to `socket.io@4.5.x`                                                                    |\n| `socket.io@4.0.x`           | `~5.0.0`            | Please upgrade to `socket.io@4.5.x`                                                                    |\n| `socket.io@3.1.x`           | `~4.1.0`            | Please upgrade to `socket.io@4.5.x` (see [here](https://socket.io/docs/v4/migrating-from-3-x-to-4-0/)) |\n| `socket.io@3.0.x`           | `~4.0.0`            | Please upgrade to `socket.io@4.5.x` (see [here](https://socket.io/docs/v4/migrating-from-3-x-to-4-0/)) |\n| `socket.io@2.5.0`           | `~3.6.0`            | `npm audit fix` should be sufficient                                                                   |\n| `socket.io@2.4.x` and below | `~3.5.0`            | Please upgrade to `socket.io@2.5.0`                                                                    |\n\n### Workarounds\n\nThere is no known workaround except upgrading to a safe version.\n\n### For more information\n\nIf you have any questions or comments about this advisory:\n\n* Open an issue in [`engine.io`](https://github.com/socketio/engine.io)\n\nThanks to [Jonathan Neve](https://github.com/jonathanneve) for the responsible disclosure.\n",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "engine.io",
+                    "purl": "pkg:npm/engine.io"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "3.6.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/11/GHSA-r7qp-cfhv-p84w/GHSA-r7qp-cfhv-p84w.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "engine.io",
+                    "purl": "pkg:npm/engine.io"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "4.0.0"
+                        },
+                        {
+                          "fixed": "6.2.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/11/GHSA-r7qp-cfhv-p84w/GHSA-r7qp-cfhv-p84w.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/socketio/engine.io/security/advisories/GHSA-r7qp-cfhv-p84w"
+                },
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-41940"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/socketio/engine.io/commit/425e833ab13373edf1dd5a0706f07100db14e3c6"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/socketio/engine.io/commit/83c4071af871fc188298d7d591e95670bf9f9085"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/socketio/engine.io"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-248"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2022-11-21T23:55:41Z",
+                "nvd_published_at": "2022-11-22T01:15:00Z",
+                "severity": "MODERATE"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-j4f2-536g-r55m"
+              ]
+            },
+            {
+              "ids": [
+                "GHSA-r7qp-cfhv-p84w"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "engine.io-client",
+            "version": "0.7.12",
+            "ecosystem": "npm",
+            "commit": ""
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2023-11-08T03:58:11Z",
+              "published": "2019-02-18T23:39:50Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-4r4m-hjwj-43p8",
+              "aliases": [
+                "CVE-2016-10536"
+              ],
+              "summary": "Insecure Defaults Allow MITM Over TLS in engine.io-client",
+              "details": "Affected versions of `engine.io-client` do not verify certificates by default, and as such may be vulnerable to Man-in-the-Middle attacks.\n\nThe vulnerability is related to the way that node.js handles the `rejectUnauthorized` setting. If the value is something that evaluates to false, such as undefined or null, certificate verification will be disabled. \n\n\n\n## Recommendation\n\nUpdate to version 1.6.9 or later.\n\nIf you are unable to upgrade, ensure all calls to socket.io to have a `rejectedUnauthorized: true` flag.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "engine.io-client",
+                    "purl": "pkg:npm/engine.io-client"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "1.6.9"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2019/02/GHSA-4r4m-hjwj-43p8/GHSA-4r4m-hjwj-43p8.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-10536"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/socketio/engine.io-client/commit/2c55b278a491bf45313ecc0825cf800e2f7ff5c1"
+                },
+                {
+                  "type": "ADVISORY",
+                  "url": "https://github.com/advisories/GHSA-4r4m-hjwj-43p8"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.cigital.com/blog/node-js-socket-io"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.npmjs.com/advisories/99"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-300"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2020-06-16T20:58:54Z",
+                "nvd_published_at": null,
+                "severity": "MODERATE"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-4r4m-hjwj-43p8"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "node-uuid",
+            "version": "1.3.3",
+            "ecosystem": "npm",
+            "commit": ""
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2023-11-08T03:58:03Z",
+              "published": "2020-04-16T03:14:50Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-265q-28rp-chq5",
+              "aliases": [
+                "CVE-2015-8851"
+              ],
+              "summary": "Insecure Entropy Source - Math.random() in node-uuid",
+              "details": "Affected versions of `node-uuid` consistently fall back to using `Math.random` as an entropy source instead of `crypto`, which may result in guessable UUID's.\n\n\n\n## Recommendation\n\nUpdate to version 1.4.4 or later.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "node-uuid",
+                    "purl": "pkg:npm/node-uuid"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "1.4.4"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2020/04/GHSA-265q-28rp-chq5/GHSA-265q-28rp-chq5.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-8851"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/broofa/node-uuid/issues/108"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/broofa/node-uuid/issues/122"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/broofa/node-uuid/commit/672f3834ed02c798aa021c618d0a5666c8da000d"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1327056"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.npmjs.com/advisories/93"
+                },
+                {
+                  "type": "WEB",
+                  "url": "http://www.openwall.com/lists/oss-security/2016/04/13/8"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-331"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2020-04-16T02:58:22Z",
+                "nvd_published_at": null,
+                "severity": "HIGH"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-265q-28rp-chq5"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "request",
+            "version": "2.88.2",
+            "ecosystem": "npm",
+            "commit": ""
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-03-21T17:47:20Z",
+              "published": "2023-03-16T15:30:19Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-p8p7-x288-28g6",
+              "aliases": [
+                "CVE-2023-28155"
+              ],
+              "related": [
+                "CGA-qqwm-8ppm-96fx"
+              ],
+              "summary": "Server-Side Request Forgery in Request",
+              "details": "The `request` package through 2.88.2 for Node.js and the `@cypress/request` package prior to 3.0.0 allow a bypass of SSRF mitigations via an attacker-controller server that does a cross-protocol redirect (HTTP to HTTPS, or HTTPS to HTTP).\n\nNOTE: The `request` package is no longer supported by the maintainer.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "request",
+                    "purl": "pkg:npm/request"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "last_affected": "2.88.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2023/03/GHSA-p8p7-x288-28g6/GHSA-p8p7-x288-28g6.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "@cypress/request",
+                    "purl": "pkg:npm/%40cypress/request"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "3.0.0"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "last_known_affected_version_range": "\u003c= 2.88.12",
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2023/03/GHSA-p8p7-x288-28g6/GHSA-p8p7-x288-28g6.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-28155"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/request/request/issues/3442"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/cypress-io/request/pull/28"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/github/advisory-database/pull/2500"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/request/request/pull/3444"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/cypress-io/request/commit/c5bcf21d40fb61feaff21a0e5a2b3934a440024f"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://doyensec.com/resources/Doyensec_Advisory_RequestSSRF_Q12023.pdf"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/cypress-io/request/blob/master/lib/redirect.js#L116"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/cypress-io/request/releases/tag/v3.0.0"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/request/request"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/request/request/blob/master/lib/redirect.js#L111"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security.netapp.com/advisory/ntap-20230413-0007"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-918"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2023-03-16T18:33:48Z",
+                "nvd_published_at": "2023-03-16T15:15:00Z",
+                "severity": "MODERATE"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-p8p7-x288-28g6"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "rollup",
+            "version": "4.6.1",
+            "ecosystem": "npm",
+            "commit": ""
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-09-26T21:11:53Z",
+              "published": "2024-09-23T22:11:02Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-gcx4-mw62-g8wm",
+              "aliases": [
+                "CVE-2024-47068"
+              ],
+              "summary": "DOM Clobbering Gadget found in rollup bundled scripts that leads to XSS",
+              "details": "### Summary\n\nWe discovered a DOM Clobbering vulnerability in rollup when bundling scripts that use `import.meta.url` or with plugins that emit and reference asset files from code  in `cjs`/`umd`/`iife` format. The DOM Clobbering gadget can lead to cross-site scripting (XSS) in web pages where scriptless attacker-controlled HTML elements (e.g., an `img` tag with an unsanitized `name` attribute) are present.\n\nIt's worth noting that we’ve identifed similar issues in other popular bundlers like Webpack ([CVE-2024-43788](https://github.com/webpack/webpack/security/advisories/GHSA-4vvj-4cpr-p986)), which might serve as a good reference.\n\n### Details\n\n#### Backgrounds\n\nDOM Clobbering is a type of code-reuse attack where the attacker first embeds a piece of non-script, seemingly benign HTML markups in the webpage (e.g. through a post or comment) and leverages the gadgets (pieces of js code) living in the existing javascript code to transform it into executable code. More for information about DOM Clobbering, here are some references:\n\n[1] https://scnps.co/papers/sp23_domclob.pdf\n[2] https://research.securitum.com/xss-in-amp4email-dom-clobbering/\n\n#### Gadget found in `rollup`\n\nWe have identified a DOM Clobbering vulnerability in `rollup` bundled scripts, particularly when the scripts uses `import.meta` and set output in format of  `cjs`/`umd`/`iife`. In such cases, `rollup` replaces meta property with the URL retrieved from `document.currentScript`.\n\nhttps://github.com/rollup/rollup/blob/b86ffd776cfa906573d36c3f019316d02445d9ef/src/ast/nodes/MetaProperty.ts#L157-L162\n\nhttps://github.com/rollup/rollup/blob/b86ffd776cfa906573d36c3f019316d02445d9ef/src/ast/nodes/MetaProperty.ts#L180-L185\n\nHowever, this implementation is vulnerable to a DOM Clobbering attack. The `document.currentScript` lookup can be shadowed by an attacker via the browser's named DOM tree element access mechanism. This manipulation allows an attacker to replace the intended script element with a malicious HTML element. When this happens, the `src` attribute of the attacker-controlled element (e.g., an `img` tag ) is used as the URL for importing scripts, potentially leading to the dynamic loading of scripts from an attacker-controlled server.\n\n### PoC\n\nConsidering a website that contains the following `main.js` script, the devloper decides to use the `rollup` to bundle up the program: `rollup main.js --format cjs --file bundle.js`.\n\n```\nvar s = document.createElement('script')\ns.src = import.meta.url + 'extra.js'\ndocument.head.append(s)\n```\n\nThe output `bundle.js` is shown in the following code snippet.\n\n```\n'use strict';\n\nvar _documentCurrentScript = typeof document !== 'undefined' ? document.currentScript : null;\nvar s = document.createElement('script');\ns.src = (typeof document === 'undefined' ? require('u' + 'rl').pathToFileURL(__filename).href : (_documentCurrentScript \u0026\u0026 False \u0026\u0026 _documentCurrentScript.src || new URL('bundle.js', document.baseURI).href)) + 'extra.js';\ndocument.head.append(s);\n```\n\nAdding the `rollup` bundled script, `bundle.js`, as part of the web page source code, the page could load the `extra.js` file from the attacker's domain, `attacker.controlled.server` due to the introduced gadget during bundling. The attacker only needs to insert an `img` tag with the name attribute set to `currentScript`. This can be done through a website's feature that allows users to embed certain script-less HTML (e.g., markdown renderers, web email clients, forums) or via an HTML injection vulnerability in third-party JavaScript loaded on the page.\n\n```\n\u003c!DOCTYPE html\u003e\n\u003chtml\u003e\n\u003chead\u003e\n  \u003ctitle\u003erollup Example\u003c/title\u003e\n  \u003c!-- Attacker-controlled Script-less HTML Element starts--!\u003e\n  \u003cimg name=\"currentScript\" src=\"https://attacker.controlled.server/\"\u003e\u003c/img\u003e\n  \u003c!-- Attacker-controlled Script-less HTML Element ends--!\u003e\n\u003c/head\u003e\n\u003cscript type=\"module\" crossorigin src=\"bundle.js\"\u003e\u003c/script\u003e\n\u003cbody\u003e\n\u003c/body\u003e\n\u003c/html\u003e\n```\n\n### Impact\n\nThis vulnerability can result in cross-site scripting (XSS) attacks on websites that include rollup-bundled files (configured with an output format of `cjs`, `iife`, or `umd` and use `import.meta`) and allow users to inject certain scriptless HTML tags without properly sanitizing the `name` or `id` attributes.\n\n### Patch\n\nPatching the following two functions with type checking would be effective mitigations against DOM Clobbering attack.\n\n```\nconst getRelativeUrlFromDocument = (relativePath: string, umd = false) =\u003e\n\tgetResolveUrl(\n\t\t`'${escapeId(relativePath)}', ${\n\t\t\tumd ? `typeof document === 'undefined' ? location.href : ` : ''\n\t\t}document.currentScript \u0026\u0026 document.currentScript.tagName.toUpperCase() === 'SCRIPT' \u0026\u0026 document.currentScript.src || document.baseURI`\n\t);\n```\n\n```\nconst getUrlFromDocument = (chunkId: string, umd = false) =\u003e\n\t`${\n\t\tumd ? `typeof document === 'undefined' ? location.href : ` : ''\n\t}(${DOCUMENT_CURRENT_SCRIPT} \u0026\u0026 ${DOCUMENT_CURRENT_SCRIPT}.tagName.toUpperCase() === 'SCRIPT' \u0026\u0026${DOCUMENT_CURRENT_SCRIPT}.src || new URL('${escapeId(\n\t\tchunkId\n\t)}', document.baseURI).href)`;\n```\n",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "rollup",
+                    "purl": "pkg:npm/rollup"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "3.0.0"
+                        },
+                        {
+                          "fixed": "3.29.5"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/09/GHSA-gcx4-mw62-g8wm/GHSA-gcx4-mw62-g8wm.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "rollup",
+                    "purl": "pkg:npm/rollup"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "4.0.0"
+                        },
+                        {
+                          "fixed": "4.22.4"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/09/GHSA-gcx4-mw62-g8wm/GHSA-gcx4-mw62-g8wm.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "rollup",
+                    "purl": "pkg:npm/rollup"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "2.79.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/09/GHSA-gcx4-mw62-g8wm/GHSA-gcx4-mw62-g8wm.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:H"
+                },
+                {
+                  "type": "CVSS_V4",
+                  "score": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/VI:L/VA:H/SC:N/SI:N/SA:N"
+                }
+              ],
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/rollup/rollup/security/advisories/GHSA-gcx4-mw62-g8wm"
+                },
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-47068"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/rollup/rollup/commit/2ef77c00ec2635d42697cff2c0567ccc8db34fb4"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/rollup/rollup/commit/e2552c9e955e0a61f70f508200ee9f752f85a541"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/rollup/rollup"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/rollup/rollup/blob/b86ffd776cfa906573d36c3f019316d02445d9ef/src/ast/nodes/MetaProperty.ts#L157-L162"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/rollup/rollup/blob/b86ffd776cfa906573d36c3f019316d02445d9ef/src/ast/nodes/MetaProperty.ts#L180-L185"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-79"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-09-23T22:11:02Z",
+                "nvd_published_at": "2024-09-23T16:15:06Z",
+                "severity": "HIGH"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-gcx4-mw62-g8wm"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "sockjs",
+            "version": "0.3.7",
+            "ecosystem": "npm",
+            "commit": ""
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-09-03T02:27:05Z",
+              "published": "2021-04-13T15:27:51Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-c9g6-9335-x697",
+              "aliases": [
+                "CVE-2020-7693"
+              ],
+              "summary": "Improper Input Validation in SocksJS-Node",
+              "details": "Incorrect handling of Upgrade header with the value websocket leads in crashing of containers hosting sockjs apps. This affects the package sockjs before 0.3.20.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "sockjs",
+                    "purl": "pkg:npm/sockjs"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "0.3.20"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2021/04/GHSA-c9g6-9335-x697/GHSA-c9g6-9335-x697.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-7693"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/sockjs/sockjs-node/issues/252"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/sockjs/sockjs-node/pull/265"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/sockjs/sockjs-node/commit/dd7e642cd69ee74385825816d30642c43e051d16"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/andsnw/sockjs-dos-py"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-575448"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://snyk.io/vuln/SNYK-JS-SOCKJS-575261"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.npmjs.com/package/sockjs"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-20"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2021-04-06T21:47:25Z",
+                "nvd_published_at": "2020-07-09T14:15:00Z",
+                "severity": "MODERATE"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-c9g6-9335-x697"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "tough-cookie",
+            "version": "2.5.0",
+            "ecosystem": "npm",
+            "commit": ""
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-06-21T21:33:53Z",
+              "published": "2023-07-01T06:30:16Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-72xf-g2v4-qvf3",
+              "aliases": [
+                "CVE-2023-26136"
+              ],
+              "related": [
+                "CGA-hf6q-478m-mm8p"
+              ],
+              "summary": "tough-cookie Prototype Pollution vulnerability",
+              "details": "Versions of the package tough-cookie before 4.1.3 are vulnerable to Prototype Pollution due to improper handling of Cookies when using CookieJar in `rejectPublicSuffixes=false` mode. This issue arises from the manner in which the objects are initialized.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "tough-cookie",
+                    "purl": "pkg:npm/tough-cookie"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "4.1.3"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2023/07/GHSA-72xf-g2v4-qvf3/GHSA-72xf-g2v4-qvf3.json"
+                  },
+                  "ecosystem_specific": {
+                    "affected_functions": [
+                      "(tough-cookie).CookieJar.setCookieSync"
+                    ]
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-26136"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/salesforce/tough-cookie/issues/282"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/salesforce/tough-cookie/commit/12d474791bb856004e858fdb1c47b7608d09cf6e"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/salesforce/tough-cookie"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/salesforce/tough-cookie/releases/tag/v4.1.3"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.debian.org/debian-lts-announce/2023/07/msg00010.html"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3HUE6ZR5SL73KHL7XUPAOEL6SB7HUDT2"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6PVVPNSAGSDS63HQ74PJ7MZ3MU5IYNVZ"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security.netapp.com/advisory/ntap-20240621-0006"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://security.snyk.io/vuln/SNYK-JS-TOUGHCOOKIE-5672873"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-1321"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2023-07-07T21:39:57Z",
+                "nvd_published_at": "2023-07-01T05:15:16Z",
+                "severity": "MODERATE"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-72xf-g2v4-qvf3"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "vite",
+            "version": "5.0.13",
+            "ecosystem": "npm",
+            "commit": ""
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-10-08T04:26:56Z",
+              "published": "2024-09-17T19:28:01Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-64vr-g452-qvp3",
+              "aliases": [
+                "CVE-2024-43788",
+                "CVE-2024-45389",
+                "CVE-2024-45812",
+                "GHSA-4vvj-4cpr-p986",
+                "GHSA-gprj-6m2f-j9hx"
+              ],
+              "related": [
+                "CGA-45fh-f7px-m6rr"
+              ],
+              "summary": "Vite DOM Clobbering gadget found in vite bundled scripts that leads to XSS",
+              "details": "### Summary\n\nWe discovered a DOM Clobbering vulnerability in Vite when building scripts to `cjs`/`iife`/`umd` output format. The DOM Clobbering gadget in the module can lead to cross-site scripting (XSS) in web pages where scriptless attacker-controlled HTML elements (e.g., an img tag with an unsanitized name attribute) are present.\n\nNote that, we have identified similar security issues in Webpack: https://github.com/webpack/webpack/security/advisories/GHSA-4vvj-4cpr-p986\n\n### Details\n\n**Backgrounds**\n\nDOM Clobbering is a type of code-reuse attack where the attacker first embeds a piece of non-script, seemingly benign HTML markups in the webpage (e.g. through a post or comment) and leverages the gadgets (pieces of js code) living in the existing javascript code to transform it into executable code. More for information about DOM Clobbering, here are some references:\n\n[1] https://scnps.co/papers/sp23_domclob.pdf\n[2] https://research.securitum.com/xss-in-amp4email-dom-clobbering/\n\n**Gadgets found in Vite**\n\nWe have identified a DOM Clobbering vulnerability in Vite bundled scripts, particularly when the scripts dynamically import other scripts from the assets folder and the developer sets the build output format to `cjs`, `iife`, or `umd`. In such cases, Vite replaces relative paths starting with `__VITE_ASSET__` using the URL retrieved from `document.currentScript`.\n\nHowever, this implementation is vulnerable to a DOM Clobbering attack. The `document.currentScript` lookup can be shadowed by an attacker via the browser's named DOM tree element access mechanism. This manipulation allows an attacker to replace the intended script element with a malicious HTML element. When this happens, the src attribute of the attacker-controlled element is used as the URL for importing scripts, potentially leading to the dynamic loading of scripts from an attacker-controlled server.\n\n```\nconst relativeUrlMechanisms = {\n  amd: (relativePath) =\u003e {\n    if (relativePath[0] !== \".\") relativePath = \"./\" + relativePath;\n    return getResolveUrl(\n      `require.toUrl('${escapeId(relativePath)}'), document.baseURI`\n    );\n  },\n  cjs: (relativePath) =\u003e `(typeof document === 'undefined' ? ${getFileUrlFromRelativePath(\n    relativePath\n  )} : ${getRelativeUrlFromDocument(relativePath)})`,\n  es: (relativePath) =\u003e getResolveUrl(\n    `'${escapeId(partialEncodeURIPath(relativePath))}', import.meta.url`\n  ),\n  iife: (relativePath) =\u003e getRelativeUrlFromDocument(relativePath),\n  // NOTE: make sure rollup generate `module` params\n  system: (relativePath) =\u003e getResolveUrl(\n    `'${escapeId(partialEncodeURIPath(relativePath))}', module.meta.url`\n  ),\n  umd: (relativePath) =\u003e `(typeof document === 'undefined' \u0026\u0026 typeof location === 'undefined' ? ${getFileUrlFromRelativePath(\n    relativePath\n  )} : ${getRelativeUrlFromDocument(relativePath, true)})`\n};\n```\n\n### PoC\n\nConsidering a website that contains the following `main.js` script, the devloper decides to use the Vite to bundle up the program with the following configuration. \n\n```\n// main.js\nimport extraURL from './extra.js?url'\nvar s = document.createElement('script')\ns.src = extraURL\ndocument.head.append(s)\n```\n\n```\n// extra.js\nexport default \"https://myserver/justAnOther.js\"\n```\n\n```\n// vite.config.js\nimport { defineConfig } from 'vite'\n\nexport default defineConfig({\n  build: {\n    assetsInlineLimit: 0, // To avoid inline assets for PoC\n    rollupOptions: {\n      output: {\n        format: \"cjs\"\n      },\n    },\n  },\n  base: \"./\",\n});\n```\n\nAfter running the build command, the developer will get following bundle as the output.\n\n```\n// dist/index-DDmIg9VD.js\n\"use strict\";const t=\"\"+(typeof document\u003e\"u\"?require(\"url\").pathToFileURL(__dirname+\"/extra-BLVEx9Lb.js\").href:new URL(\"extra-BLVEx9Lb.js\",document.currentScript\u0026\u0026document.currentScript.src||document.baseURI).href);var e=document.createElement(\"script\");e.src=t;document.head.append(e);\n```\n\nAdding the Vite bundled script, `dist/index-DDmIg9VD.js`, as part of the web page source code, the page could load the `extra.js` file from the attacker's domain, `attacker.controlled.server`. The attacker only needs to insert an `img` tag with the `name` attribute set to `currentScript`. This can be done through a website's feature that allows users to embed certain script-less HTML (e.g., markdown renderers, web email clients, forums) or via an HTML injection vulnerability in third-party JavaScript loaded on the page.\n\n\n```\n\u003c!DOCTYPE html\u003e\n\u003chtml\u003e\n\u003chead\u003e\n  \u003ctitle\u003eVite Example\u003c/title\u003e\n  \u003c!-- Attacker-controlled Script-less HTML Element starts--!\u003e\n  \u003cimg name=\"currentScript\" src=\"https://attacker.controlled.server/\"\u003e\u003c/img\u003e\n  \u003c!-- Attacker-controlled Script-less HTML Element ends--!\u003e\n\u003c/head\u003e\n\u003cscript type=\"module\" crossorigin src=\"/assets/index-DDmIg9VD.js\"\u003e\u003c/script\u003e\n\u003cbody\u003e\n\u003c/body\u003e\n\u003c/html\u003e\n```\n\n### Impact\n\nThis vulnerability can result in cross-site scripting (XSS) attacks on websites that include Vite-bundled files (configured with an output format of `cjs`, `iife`, or `umd`) and allow users to inject certain scriptless HTML tags without properly sanitizing the name or id attributes.\n\n### Patch\n\n```\n// https://github.com/vitejs/vite/blob/main/packages/vite/src/node/build.ts#L1296\nconst getRelativeUrlFromDocument = (relativePath: string, umd = false) =\u003e\n  getResolveUrl(\n    `'${escapeId(partialEncodeURIPath(relativePath))}', ${\n      umd ? `typeof document === 'undefined' ? location.href : ` : ''\n    }document.currentScript \u0026\u0026 document.currentScript.tagName.toUpperCase() === 'SCRIPT' \u0026\u0026 document.currentScript.src || document.baseURI`,\n  )\n```",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "vite",
+                    "purl": "pkg:npm/vite"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "5.4.0"
+                        },
+                        {
+                          "fixed": "5.4.6"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/09/GHSA-64vr-g452-qvp3/GHSA-64vr-g452-qvp3.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "vite",
+                    "purl": "pkg:npm/vite"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "5.3.0"
+                        },
+                        {
+                          "fixed": "5.3.6"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/09/GHSA-64vr-g452-qvp3/GHSA-64vr-g452-qvp3.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "vite",
+                    "purl": "pkg:npm/vite"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "5.2.0"
+                        },
+                        {
+                          "fixed": "5.2.14"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/09/GHSA-64vr-g452-qvp3/GHSA-64vr-g452-qvp3.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "vite",
+                    "purl": "pkg:npm/vite"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "4.0.0"
+                        },
+                        {
+                          "fixed": "4.5.4"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/09/GHSA-64vr-g452-qvp3/GHSA-64vr-g452-qvp3.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "vite",
+                    "purl": "pkg:npm/vite"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "3.2.11"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/09/GHSA-64vr-g452-qvp3/GHSA-64vr-g452-qvp3.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "vite",
+                    "purl": "pkg:npm/vite"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "5.0.0"
+                        },
+                        {
+                          "fixed": "5.1.8"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/09/GHSA-64vr-g452-qvp3/GHSA-64vr-g452-qvp3.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:H"
+                },
+                {
+                  "type": "CVSS_V4",
+                  "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:A/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N"
+                }
+              ],
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/vitejs/vite/security/advisories/GHSA-64vr-g452-qvp3"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/webpack/webpack/security/advisories/GHSA-4vvj-4cpr-p986"
+                },
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-45812"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/vitejs/vite/commit/179b17773cf35c73ddb041f9e6c703fd9f3126af"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/vitejs/vite/commit/2691bb3ff6b073b41fb9046909e1e03a74e36675"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/vitejs/vite/commit/2ddd8541ec3b2d2e5b698749e0f2362ef28056bd"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/vitejs/vite/commit/ade1d89660e17eedfd35652165b0c26905259fad"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/vitejs/vite/commit/e8127166979e7ace6eeaa2c3b733c8994caa31f3"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/vitejs/vite/commit/ebb94c5b3bf41950f45562595adec117a4d0ba5e"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/vitejs/vite"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://research.securitum.com/xss-in-amp4email-dom-clobbering"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://scnps.co/papers/sp23_domclob.pdf"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-79"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-09-17T19:28:01Z",
+                "nvd_published_at": "2024-09-17T20:15:06Z",
+                "severity": "MODERATE"
+              }
+            },
+            {
+              "modified": "2024-09-19T18:34:32Z",
+              "published": "2024-09-17T18:44:12Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-9cwx-2883-4wfx",
+              "aliases": [
+                "CVE-2024-45811"
+              ],
+              "related": [
+                "CGA-2rrm-cfwm-848j"
+              ],
+              "summary": "Vite's `server.fs.deny` is bypassed when using `?import\u0026raw`",
+              "details": "### Summary\nThe contents of arbitrary files can be returned to the browser.\n\n### Details\n`@fs` denies access to files outside of Vite serving allow list. Adding `?import\u0026raw` to the URL bypasses this limitation and returns the file content if it exists.\n\n### PoC\n```sh\n$ npm create vite@latest\n$ cd vite-project/\n$ npm install\n$ npm run dev\n\n$ echo \"top secret content\" \u003e /tmp/secret.txt\n\n# expected behaviour\n$ curl \"http://localhost:5173/@fs/tmp/secret.txt\"\n\n    \u003cbody\u003e\n      \u003ch1\u003e403 Restricted\u003c/h1\u003e\n      \u003cp\u003eThe request url \u0026quot;/tmp/secret.txt\u0026quot; is outside of Vite serving allow list.\n\n# security bypassed\n$ curl \"http://localhost:5173/@fs/tmp/secret.txt?import\u0026raw\"\nexport default \"top secret content\\n\"\n//# sourceMappingURL=data:application/json;base64,eyJ2...\n```\n\n",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "vite",
+                    "purl": "pkg:npm/vite"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "5.4.0"
+                        },
+                        {
+                          "fixed": "5.4.6"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "last_known_affected_version_range": "\u003c= 5.4.5",
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/09/GHSA-9cwx-2883-4wfx/GHSA-9cwx-2883-4wfx.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "vite",
+                    "purl": "pkg:npm/vite"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "5.3.0"
+                        },
+                        {
+                          "fixed": "5.3.6"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "last_known_affected_version_range": "\u003c= 5.3.5",
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/09/GHSA-9cwx-2883-4wfx/GHSA-9cwx-2883-4wfx.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "vite",
+                    "purl": "pkg:npm/vite"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "5.2.0"
+                        },
+                        {
+                          "fixed": "5.2.14"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/09/GHSA-9cwx-2883-4wfx/GHSA-9cwx-2883-4wfx.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "vite",
+                    "purl": "pkg:npm/vite"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "4.0.0"
+                        },
+                        {
+                          "fixed": "4.5.4"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "last_known_affected_version_range": "\u003c= 4.5.3",
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/09/GHSA-9cwx-2883-4wfx/GHSA-9cwx-2883-4wfx.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "vite",
+                    "purl": "pkg:npm/vite"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "3.2.11"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "last_known_affected_version_range": "\u003c= 3.2.10",
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/09/GHSA-9cwx-2883-4wfx/GHSA-9cwx-2883-4wfx.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "vite",
+                    "purl": "pkg:npm/vite"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "5.0.0"
+                        },
+                        {
+                          "fixed": "5.1.8"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "last_known_affected_version_range": "\u003c= 5.1.7",
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/09/GHSA-9cwx-2883-4wfx/GHSA-9cwx-2883-4wfx.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+                },
+                {
+                  "type": "CVSS_V4",
+                  "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+                }
+              ],
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/vitejs/vite/security/advisories/GHSA-9cwx-2883-4wfx"
+                },
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-45811"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/vitejs/vite/commit/4573a6fd6f1b097fb7296a3e135e0646b996b249"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/vitejs/vite/commit/6820bb3b9a54334f3268fc5ee1e967d2e1c0db34"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/vitejs/vite/commit/8339d7408668686bae56eaccbfdc7b87612904bd"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/vitejs/vite/commit/a6da45082b6e73ddfdcdcc06bb5414f976a388d6"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/vitejs/vite/commit/b901438f99e667f76662840826eec91c8ab3b3e7"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/vitejs/vite"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-200",
+                  "CWE-284"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2024-09-17T18:44:12Z",
+                "nvd_published_at": "2024-09-17T20:15:05Z",
+                "severity": "MODERATE"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-64vr-g452-qvp3"
+              ]
+            },
+            {
+              "ids": [
+                "GHSA-9cwx-2883-4wfx"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "ws",
+            "version": "0.4.31",
+            "ecosystem": "npm",
+            "commit": ""
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2023-11-08T03:58:10Z",
+              "published": "2019-02-18T23:56:42Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-2mhh-w6q8-5hxw",
+              "aliases": [
+                "CVE-2016-10518"
+              ],
+              "summary": "Remote Memory Disclosure in ws",
+              "details": "Versions of `ws` prior to 1.0.1 are affected by a remote memory disclosure vulnerability.\n\nIn certain rare circumstances, applications which allow users to control the arguments of a `client.ping()` call will cause `ws` to send the contents of an allocated but non-zero-filled buffer to the server. This may disclose sensitive information that still exists in memory after previous use of the memory for other tasks.\n\n\n\n## Proof of Concept\n```\nvar ws = require('ws')\n\nvar server = new ws.Server({ port: 9000 })\nvar client = new ws('ws://localhost:9000')\n\nclient.on('open', function () {\n  console.log('open')\n  client.ping(50) // this sends a non-zeroed buffer of 50 bytes\n\n  client.on('pong', function (data) {\n    console.log('got pong')\n    console.log(data) // Data from the client. \n  })\n})\n```\n\n\n## Recommendation\n\nUpdate to version 1.0.1 or greater.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "ws",
+                    "purl": "pkg:npm/ws"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "1.0.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2019/02/GHSA-2mhh-w6q8-5hxw/GHSA-2mhh-w6q8-5hxw.json"
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-10518"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/websockets/ws/commit/29293ed11b679e0366fa0f6bb9310b330dafd795"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://gist.github.com/c0nrad/e92005446c480707a74a"
+                },
+                {
+                  "type": "ADVISORY",
+                  "url": "https://github.com/advisories/GHSA-2mhh-w6q8-5hxw"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/websockets/ws/releases/tag/1.0.1"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.npmjs.com/advisories/67"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-201"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2020-06-16T20:52:34Z",
+                "nvd_published_at": null,
+                "severity": "LOW"
+              }
+            },
+            {
+              "modified": "2023-11-08T03:58:11Z",
+              "published": "2019-02-18T23:58:35Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-6663-c963-2gqg",
+              "aliases": [
+                "CVE-2016-10542"
+              ],
+              "summary": "DoS due to excessively large websocket message in ws",
+              "details": "Affected versions of `ws` do not appropriately limit the size of incoming websocket payloads, which may result in a denial of service condition when the node process crashes after receiving a large payload.\n\n\n\n## Recommendation\n\nUpdate to version 1.1.1 or later. \nAlternatively, set the `maxpayload` option for the `ws` server to a value smaller than 256MB.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "ws",
+                    "purl": "pkg:npm/ws"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "1.1.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2019/02/GHSA-6663-c963-2gqg/GHSA-6663-c963-2gqg.json"
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-10542"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/nodejs/node/issues/7388"
+                },
+                {
+                  "type": "ADVISORY",
+                  "url": "https://github.com/advisories/GHSA-6663-c963-2gqg"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.npmjs.com/advisories/120"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-400"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2020-06-16T21:18:11Z",
+                "nvd_published_at": null,
+                "severity": "HIGH"
+              }
+            },
+            {
+              "modified": "2021-08-04T21:29:05Z",
+              "published": "2019-06-04T19:37:52Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-5v72-xg48-5rpm",
+              "summary": "Denial of Service in ws",
+              "details": "Affected versions of `ws` can crash when a specially crafted `Sec-WebSocket-Extensions` header containing `Object.prototype` property names as extension or parameter names is sent.\n\n## Proof of concept\n\n```\nconst WebSocket = require('ws');\nconst net = require('net');\n\nconst wss = new WebSocket.Server({ port: 3000 }, function () {\n  const payload = 'constructor';  // or ',;constructor'\n\n  const request = [\n    'GET / HTTP/1.1',\n    'Connection: Upgrade',\n    'Sec-WebSocket-Key: test',\n    'Sec-WebSocket-Version: 8',\n    `Sec-WebSocket-Extensions: ${payload}`,\n    'Upgrade: websocket',\n    '\\r\\n'\n  ].join('\\r\\n');\n\n  const socket = net.connect(3000, function () {\n    socket.resume();\n    socket.write(request);\n  });\n});\n```\n\n\n## Recommendation\n\nUpdate to version 3.3.1 or later.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "ws",
+                    "purl": "pkg:npm/ws"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0.2.6"
+                        },
+                        {
+                          "fixed": "1.1.5"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2019/06/GHSA-5v72-xg48-5rpm/GHSA-5v72-xg48-5rpm.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "ws",
+                    "purl": "pkg:npm/ws"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "2.0.0"
+                        },
+                        {
+                          "fixed": "3.3.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2019/06/GHSA-5v72-xg48-5rpm/GHSA-5v72-xg48-5rpm.json"
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/websockets/ws/commit/c4fe46608acd61fbf7397eadc47378903f95b78a"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/websockets/ws/commit/f8fdcd40ac8be7318a6ee41f5ceb7e77c995b407"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://snyk.io/vuln/npm:ws:20171108"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.npmjs.com/advisories/550"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://www.npmjs.com/advisories/550/versions"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-400"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2019-06-04T19:37:42Z",
+                "nvd_published_at": null,
+                "severity": "HIGH"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-2mhh-w6q8-5hxw"
+              ]
+            },
+            {
+              "ids": [
+                "GHSA-6663-c963-2gqg"
+              ]
+            },
+            {
+              "ids": [
+                "GHSA-5v72-xg48-5rpm"
+              ]
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "xmlhttprequest",
+            "version": "1.5.0",
+            "ecosystem": "npm",
+            "commit": ""
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2024-09-03T03:27:06Z",
+              "published": "2021-05-04T18:02:34Z",
+              "schema_version": "1.6.0",
+              "id": "GHSA-h4j5-c7cj-74xg",
+              "aliases": [
+                "CVE-2020-28502",
+                "SNYK-JAVA-ORGWEBJARSNPM-1082937",
+                "SNYK-JAVA-ORGWEBJARSNPM-1082938",
+                "SNYK-JS-XMLHTTPREQUEST-1082935",
+                "SNYK-JS-XMLHTTPREQUESTSSL-1082936"
+              ],
+              "summary": "xmlhttprequest and xmlhttprequest-ssl vulnerable to Arbitrary Code Injection",
+              "details": "This affects the package xmlhttprequest before 1.7.0; all versions of package xmlhttprequest-ssl. Provided requests are sent synchronously (`async=False` on `xhr.open`), malicious user input flowing into `xhr.send` could result in arbitrary code being injected and run.",
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "xmlhttprequest",
+                    "purl": "pkg:npm/xmlhttprequest"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "1.7.0"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2021/05/GHSA-h4j5-c7cj-74xg/GHSA-h4j5-c7cj-74xg.json"
+                  },
+                  "ecosystem_specific": {
+                    "affected_functions": [
+                      "(xmlhttprequest).XMLHttpRequest"
+                    ]
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "xmlhttprequest-ssl",
+                    "purl": "pkg:npm/xmlhttprequest-ssl"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "1.6.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2021/05/GHSA-h4j5-c7cj-74xg/GHSA-h4j5-c7cj-74xg.json"
+                  },
+                  "ecosystem_specific": {
+                    "affected_functions": [
+                      "(xmlhttprequest-ssl).XMLHttpRequest"
+                    ]
+                  }
+                }
+              ],
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+                }
+              ],
+              "references": [
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-28502"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/driverdan/node-XMLHttpRequest/commit/983cfc244c7567ad6a59e366e55a8037e0497fe6"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/mjwwit/node-XMLHttpRequest/commit/ee1e81fc67729c7c0eba5537ed7fe1e30a6b3291"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/driverdan/node-XMLHttpRequest/blob/1.6.0/lib/XMLHttpRequest.js#L480"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/driverdan/node-XMLHttpRequest/blob/1.6.0/lib/XMLHttpRequest.js%23L480"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/mjwwit/node-XMLHttpRequest/blob/ae38832a0f1347c5e96dda665402509a3458e302/lib/XMLHttpRequest.js#L531"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1082937"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1082938"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://snyk.io/vuln/SNYK-JS-XMLHTTPREQUEST-1082935"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://snyk.io/vuln/SNYK-JS-XMLHTTPREQUESTSSL-1082936"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-94"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2021-03-18T20:34:02Z",
+                "nvd_published_at": "2021-03-05T18:15:00Z",
+                "severity": "CRITICAL"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-h4j5-c7cj-74xg"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
